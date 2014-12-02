@@ -6,7 +6,7 @@
 
 出刊年月       epub           ipad:PDF      A4:PDF     單頁 HTM     專案檢視
 ------------   ----------     -----------   --------   -----------  -------------
-2014年10月     [epub]         [ipad.pdf]    [A4.pdf]   [pmag.html]  [github]
+2014年12月     [epub]         [ipad.pdf]    [A4.pdf]   [pmag.html]  [github]
 
 ### 本期內容
 * 前言
