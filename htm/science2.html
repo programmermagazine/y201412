@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="../css/pmag.css" type="text/css" />
+</head>
+<body>
+<div id="header_wrap">
+   <h1><a href="https://www.facebook.com/groups/youngmaker.magazine/">少年科技人</a><sub>雜誌 --  <a href="http://youngmaker.github.io/201412/htm/home.html">2014 年 12 月號</a> (開放公益出版品)</sub></h1>
+</div>
+<div id="content">
+<div id="TOC">
+<ul>
+<li><a href="#組成電腦的基礎元件----邏輯閘">組成電腦的基礎元件 -- 邏輯閘</a></li>
+</ul>
+</div>
+<h2 id="組成電腦的基礎元件----邏輯閘">組成電腦的基礎元件 -- 邏輯閘</h2>
+<p>在 [上期的少年科技人雜誌] 當中，我們探討了「電腦的歷史、工業與結構」這個議題，並且在 <a href="http://programmermagazine.github.io/y201410/htm/focus2.html">透視電腦的內部結構</a> 這篇文章中看到了電腦的基本組成元件，那就是邏輯閘。</p>
+<p>在接下來的幾期當中，我們將逐步的從邏輯閘開始，解說「電腦是如何用邏輯閘所組成的」這個問題。</p>
+<p>組成電腦的基本邏輯閘包含 AND、OR、NOT、XOR 等四種，其中 AND、OR、NOT 三種就可以組成所有電路，包含 XOR，但是加上 XOR 時會比較方便，因為在有些電路上用 XOR 可以大量減少邏輯閘的數量。</p>
+<h3 id="基本邏輯閘-logic-gate">基本邏輯閘 (Logic Gate)</h3>
+<p>反閘 (NOT) 的圖示與功能如下，其輸入輸出都只有一條，當輸入 0 的時候就輸出 1，而輸入 1 的時候就輸出 0。</p>
+<div class="figure">
+<img src="../img/notGate.png" alt="圖、反閘 (NOT)" /><p class="caption">圖、反閘 (NOT)</p>
+</div>
+<p>及閘 (AND) 的圖示與功能如下，其輸入有兩條，輸出只有一條，當輸入 11 的時候才會就輸出 1，其他三種情況則一律輸出 0。</p>
+<div class="figure">
+<img src="../img/andGate.png" alt="圖、及閘 (AND)" /><p class="caption">圖、及閘 (AND)</p>
+</div>
+<p>換言之、AND 是在 A B 兩者都為 1 的時候才會輸出 1，這和邏輯學上的「且」(AND) 相同，當我們說「他高且帥」的時候，代表他同時具有「高」和「帥」兩個特性。</p>
+<p>或閘 (OR) 的圖示與功能如下，其輸入有兩條，輸出只有一條，當輸入 00 的時候才會就輸出 0，其他三種情況則一律輸出 1。</p>
+<div class="figure">
+<img src="../img/orGate.png" alt="圖、或閘 (OR)" /><p class="caption">圖、或閘 (OR)</p>
+</div>
+<p>換句話說、只要 A B 兩者當中有一個為 1，那麼輸出就會是 1，這和邏輯學上的「或」(OR) 相同，當我們說「高或帥」的時候，代表他只要具備「高」或「帥」其中一個特性就滿足了條件。</p>
+<p>互斥或閘 (XOR) 的圖示與功能如下，其輸入有兩條，輸出只有一條，當兩條不一樣的時候就輸出 1，兩者一樣的時候則會輸出 0。</p>
+<div class="figure">
+<img src="../img/xorGate.png" alt="圖、互斥或閘 (XOR)" /><p class="caption">圖、互斥或閘 (XOR)</p>
+</div>
+<p>有了上述邏輯閘之後，我們就可以用這樣的閘來組成電腦當中最核心的一個運算，那就是加法了。</p>
+<p>但是、要理解如何用邏輯閘組成加法運算之前，我們必須先了解二進位這個概念。</p>
+<h3 id="二進位加法電路">二進位加法電路</h3>
+<p>將兩個輸入相加的電路，稱為「半加器」(half adder)，而將三個輸入相加的電路，則稱為「全加器」(full adder)。</p>
+<p>半加器</p>
+<div class="figure">
+<img src="../img/Half_Adder.svg.png" alt="圖、半加器" /><p class="caption">圖、半加器</p>
+</div>
+<pre><code>A + B → S, 進位 C
+0 + 0 → 0       0 
+0 + 1 → 1       0
+1 + 0 → 1       0
+1 + 1 → 0,      1 (因為 1 + 1 = 2 = 0 + (1 × 2) )</code></pre>
+<h3 id="參考文獻">參考文獻</h3>
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Logic_gate">維基百科：邏輯閘</a></li>
+<li><a href="http://zh.wikipedia.org/wiki/%E5%8A%A0%E6%B3%95%E5%99%A8">維基百科：加法器</a></li>
+</ul>
+</div>
+<div id="footer">
+<a href="https://www.facebook.com/groups/youngmaker.magazine/">少年科技人雜誌</a> ，採用 <a href="http://creativecommons.org/licenses/by-sa/3.0/tw/ ">創作共用：姓名標示、相同方式分享</a> 授權，歡迎加入 <a href="https://www.facebook.com/groups/youngmaker.magazine/">雜誌社團</a>
+</div>
+</body>
+</html>

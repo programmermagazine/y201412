@@ -1,0 +1,1186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="2014 年 12 月 (第二期)" />
+  <title>少年科技人雜誌</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; }
+code > span.dt { color: #902000; }
+code > span.dv { color: #40a070; }
+code > span.bn { color: #40a070; }
+code > span.fl { color: #40a070; }
+code > span.ch { color: #4070a0; }
+code > span.st { color: #4070a0; }
+code > span.co { color: #60a0b0; font-style: italic; }
+code > span.ot { color: #007020; }
+code > span.al { color: #ff0000; font-weight: bold; }
+code > span.fu { color: #06287e; }
+code > span.er { color: #ff0000; font-weight: bold; }
+  </style>
+  <link rel="stylesheet" href="../css/pmag.css" type="text/css" />
+</head>
+<body>
+<div id="header_wrap">
+   <h1><a href="https://www.facebook.com/groups/youngmaker.magazine/">少年科技人</a><sub>雜誌 --  <a href="http://youngmaker.github.io/201412/htm/home.html">2014 年 12 月號</a> (開放公益出版品)</sub></h1>
+</div>
+<div id="content">
+<div id="header">
+<h1 class="title"><a href="http://youngmaker.github.com/home/">少年科技人雜誌</a></h1>
+<h2 class="author">2014 年 12 月 (第二期)</h2>
+<h3 class="date">本期焦點：網頁技術 (Web Technology)</h3>
+</div>
+<div id="TOC">
+<ul>
+<li><a href="#前言">前言</a><ul>
+<li><a href="#編輯小語">編輯小語</a></li>
+<li><a href="#授權聲明">授權聲明</a></li>
+</ul></li>
+<li><a href="#本期焦點網頁技術-web-technology">本期焦點：網頁技術 (Web Technology)</a><ul>
+<li><a href="#網路技術的歷史-從-arpanetinternet-到-web">網路技術的歷史: 從 ARPANet、Internet 到 Web</a></li>
+<li><a href="#基於-httphtmlcssjavascript-的-web-技術">基於 HTTP/HTML/CSS/JavaScript 的 Web 技術</a></li>
+<li><a href="#html-網頁設計">HTML 網頁設計</a></li>
+<li><a href="#css-版面設計">CSS 版面設計</a></li>
+<li><a href="#javascript----讓網頁動起來">JavaScript -- 讓網頁動起來</a></li>
+</ul></li>
+<li><a href="#科技人小故事">科技人小故事</a><ul>
+<li><a href="#與大師相遇-tim-burner-lee">與大師相遇 : Tim Burner Lee</a></li>
+</ul></li>
+<li><a href="#影音頻道">影音頻道</a><ul>
+<li><a href="#電腦網路的概念與歷史----internet-與-web">電腦網路的概念與歷史 -- Internet 與 Web</a></li>
+</ul></li>
+<li><a href="#科學原理">科學原理</a><ul>
+<li><a href="#電腦的數學基礎二進位系統與運算">電腦的數學基礎：二進位系統與運算</a></li>
+</ul></li>
+<li><a href="#科技人專欄">科技人專欄</a><ul>
+<li><a href="#組成電腦的基礎元件----邏輯閘">組成電腦的基礎元件 -- 邏輯閘</a></li>
+</ul></li>
+<li><a href="#雜誌訊息">雜誌訊息</a><ul>
+<li><a href="#投稿須知">投稿須知</a></li>
+<li><a href="#智財權注意事項">智財權注意事項</a></li>
+<li><a href="#參與編輯">參與編輯</a></li>
+<li><a href="#公益資訊">公益資訊</a></li>
+</ul></li>
+</ul>
+</div>
+<h1 id="前言">前言</h1>
+<h2 id="編輯小語">編輯小語</h2>
+<p>本期的焦點是 Web 技術，這是一個以網頁為核心的技術體系，也是目前網路的主力技術。 Web 技術主要由 HTML/CSS/JavaScript 這三種技術所組成，其中 HTML 負責網頁的結構，CSS 則是用來讓網頁更美觀的排版語言，JavaScript 則是用來讓網頁具有互動性的程式技術。</p>
+<p>當然、除了這三種技術之外，還必須搭配「伺服端」技術，像是 Ruby on Rail, PHP, ASP.NET, Python Dejango, 或 Node.js 等在伺服器上執行並輸出網頁的技術，才能讓這些「網頁」技術可以變成完整的「網站」，我們將陸續在未來介紹其中一些伺服端技術。</p>
+<p>另外、延續上期的「電腦的歷史、工業與結構」這個主題，我們在本期開始進入電腦硬體設計的細節，介紹了「二進位系統」與「數位電路邏輯閘」等主題，希望透過這一系列的介紹可以讓讀者快速的理解電腦的設計原理。</p>
+<p>---- （「少年科技人」雜誌編輯 - 陳鍾誠, 2014/12/01）</p>
+<h2 id="授權聲明">授權聲明</h2>
+<p>本雜誌許多資料修改自維基百科，採用 創作共用：<a href="http://creativecommons.org/licenses/by-sa/3.0/tw/">姓名標示、相同方式分享</a> 授權，若您想要修改本書產生衍生著作時，至少應該遵守下列授權條件：</p>
+<ol style="list-style-type: decimal">
+<li>標示原作者姓名 (包含該文章作者，若有來自維基百科的部份也請一併標示)。</li>
+<li>採用 創作共用：<a href="http://creativecommons.org/licenses/by-sa/3.0/tw/">姓名標示、相同方式分享</a> 的方式公開衍生著作。</li>
+</ol>
+<p>另外、當本雜誌中有文章或素材並非採用 <a href="http://creativecommons.org/licenses/by-sa/3.0/tw/">姓名標示、相同方式分享</a> 時，將會在該文章或素材後面標示其授權，此時該文章將以該標示的方式授權釋出，請修改者注意這些授權標示，以避免產生侵權糾紛。</p>
+<p>例如有些文章可能不希望被作為「商業性使用」，此時就可能會採用創作共用：[姓名標示、非商業性、相同方式分享] 的授權，此時您就不應當將該文章用於商業用途上。</p>
+<p>最後、懇請勿移除公益捐贈的相關描述，以便讓愛心得以持續散播！</p>
+<h1 id="本期焦點網頁技術-web-technology">本期焦點：網頁技術 (Web Technology)</h1>
+<h2 id="網路技術的歷史-從-arpanetinternet-到-web">網路技術的歷史: 從 ARPANet、Internet 到 Web</h2>
+<p>在 1950 年代，通信研究者認識到需要允許在不同計算機用戶和通信網路之間進行常規的通信。這促使了分散網路和封包交換的研究。1960 年美國國防部高等研究計劃署（ARPA）出於冷戰考慮建立的ARPA網引發了技術進步並使其成為互聯網發展的中心。1973 年 ARPA網 擴展成可國際互通的互聯網（Internet)，第一批接入的有英國和挪威計算機。</p>
+<div class="figure">
+<img src="../img/Internet.png" alt="圖、Internet 來源：http://commons.wikimedia.org/wiki/File:Internet.png" /><p class="caption">圖、Internet <BR/>來源：http://commons.wikimedia.org/wiki/File:Internet.png</p>
+</div>
+<h3 id="阿帕網-arpanet">阿帕網 (ARPANet)</h3>
+<p>1960年代、美國國防部先進研究中心（Advanced Research Project Agency, ARPA) 是一個超級有錢的研究單位，當時 ARPA 掌控了全美國科學領域研究中70%的資金，雖然 ARPA 所補助的項目常常與國防沒有明顯的關係。</p>
+<p>但是、正因為如此，ARPA反而成為許多現代重要科技的發源地，像是網路、電腦繪圖、平行處理、模擬飛行等科技都是在 ARPA 的資助下誕生的。</p>
+<p>1966年鮑勃·泰勒（Bob Taylor）成為 ARPA 當中 的「資訊處理科技研究室」 （Information Processing Techniques Office, IPTO）的主管，他在任職期間萌發了建構新型計算機網路的想法，並邀請“阿帕網之父”的拉里·羅伯茨 （Larry Roberts）出任信息處理處處長。</p>
+<p>1967年，羅伯茨來到高級研究計劃署ARPA，著手籌建「分布式網路」。人員調度和工程設計很順利，不到一年，就提出阿帕網的構想。隨著計劃的不斷改進和完善，羅伯茨在描圖紙上陸續繪制了數以百計的網路連接設計圖，使之結構日益成熟。</p>
+<p>1968年，羅伯茨提交研究報告《資源共享的計算機網路》，其中著力闡發的就是讓「阿帕」的電腦達到互相連接，從而使大家分享彼此的研究成果。根據這份報告組建的國防部“高級研究計劃網”，就是著名的“阿帕網”(ARPANet)，拉里·羅伯茨也就成為「阿帕網之父」。</p>
+<p>1969年底，阿帕網正式投入運行。</p>
+<p>最初的「阿帕網」，由西海岸的 4 個節點構成。第一個節點選在加州大學洛杉磯分校（UCLA），因為羅伯茨過去的麻省理工學院同事L.克萊因羅克教授，正在該校主持網路研究。第二個節點選在斯坦福研究院（SRI），那里有道格拉斯·恩格巴特（D.Engelbart）等一批網路的先驅人物。此外，加州大學聖巴巴拉分校（UCSB）和猶他大學（UTAH）分別被選為三、四節點。這兩所大學都有電腦繪圖研究方面的專家，而泰勒之前的信息處理技術處處長伊凡·澤蘭教授，此時也任教於猶他大學。</p>
+<p>但是、除了ARPANet之外，還有像UUCP、Usenet、Bitnet、CSNET和多種商用 X.25 網路等也都在 ARPANet 之後開始發展.</p>
+<ol style="list-style-type: decimal">
+<li>英國 National Physical Laboratory （NPL）所提出採用封包交換式的網路,</li>
+<li>Michigan Educational Research Information Triad 於 1966 年所開始發展的 Merit Network</li>
+<li>法國由 Louis Pouzin 主導設計的研究型網路 於 1973 年開始測試.</li>
+<li>1974 年基於 X.25 協議的 SERCnet 網路開始運作，後來成為 JANET.</li>
+</ol>
+<p>當時的 ARPANet 由於用了太多專用設備，無法做到和其他網路互通訊息。因此在 1973年文頓·瑟夫（Vinton Cerf）和羅伯特·卡恩（Robert Elliot Kahn）開始思考如何將 ARPA 網和另外兩個已有的網路相連接，尤其是連接衛星網路（SAT NET）和基於夏威夷的分組無線業務的ALOHA網（ALOHA NET）瑟夫設想了新的計算機交流協議，最後被稱為傳送控制協議／互聯網協議（TCP/IP）。（他們在2004年也因此獲得圖靈獎）</p>
+<h3 id="tcpip-協議">TCP/IP 協議</h3>
+<p>1972年，羅伯特·卡恩（Robert E. Kahn）被 DARPA 的信息技術處理辦公室雇用，在那裏他研究衛星數據包網路和地面無線數據包網路，並且意識到能夠在它們之間溝通的價值。在1973年春天，已有的ARPANET網路控制程序（NCP）協議的開發者文頓·瑟夫（Vinton Cerf）加入到卡恩為ARPANET設計下一代協議而開發開放互連模型的工作中。</p>
+<p>到了1973年夏天，卡恩和瑟夫很快就開發出了一個基本的改進形式，其中網路協議之間的不同通過使用一個公用互聯網路協議而隱藏起來，並且可靠性由主機保證而不是像ARPANET那樣由網路保證。（瑟夫稱贊Hubert Zimmerman和Louis Pouzin（CYCLADES網路的設計者）在這個設計上發揮了重要影響。） 由於網路的作用減少到最小的程度，就有可能將任何網路連接到一起，而不用管它們不同的特點，這樣就解決了卡恩最初的問題。（一個流行的說法提到瑟夫和卡恩工作的最終產品 TCP/IP 將在運行“兩個罐子和一根弦”上，實際上它已經用在信鴿上。</p>
+<div class="figure">
+<img src="../img/Connection_TCP.png" alt="圖、TCP連線的正常建立來源：http://zh.wikipedia.org/wiki/%E4%BC%A0%E8%BE%93%E6%8E%A7%E5%88%B6%E5%8D%8F%E8%AE%AE#mediaviewer/File:Connection_TCP.png" /><p class="caption">圖、TCP連線的正常建立<br/>來源：http://zh.wikipedia.org/wiki/%E4%BC%A0%E8%BE%93%E6%8E%A7%E5%88%B6%E5%8D%8F%E8%AE%AE#mediaviewer/File:Connection_TCP.png</p>
+</div>
+<p>一個稱為網關（後來改為路由器以免與網關混淆）的計算機為每個網路提供一個接口並且在它們之間來回傳輸數據包。 這個設計思想更細的形式由瑟夫在斯坦福的網路研究組的 1973年–1974年 期間開發出來。（處於同一時期的誕生了PARC通用包協議組的施樂PARC早期網路研究工作也有重要的技術影響；人們在兩者之間搖擺不定。）</p>
+<div class="figure">
+<img src="../img/Tcp_transport_example.gif" alt="圖、TCP資料傳輸協議的運作原理http://zh.wikipedia.org/wiki/%E4%BC%A0%E8%BE%93%E6%8E%A7%E5%88%B6%E5%8D%8F%E8%AE%AE#mediaviewer/File:Tcp_transport_example.gif" /><p class="caption">圖、TCP資料傳輸協議的運作原理<br/>http://zh.wikipedia.org/wiki/%E4%BC%A0%E8%BE%93%E6%8E%A7%E5%88%B6%E5%8D%8F%E8%AE%AE#mediaviewer/File:Tcp_transport_example.gif</p>
+</div>
+<p>DARPA於是與BBN、斯坦福和倫敦大學簽署了協議開發不同硬件平臺上協議的運行版本。有四個版本被開發出來——TCP v1、TCP v2、在1978年春天分成TCP v3和IP v3的版本，後來就是穩定的TCP/IP v4——目前因特網仍然使用的標準協議。 1975年，兩個網路之間的TCP/IP通信在斯坦福和倫敦大學（UCL）之間進行了測試。</p>
+<div class="figure">
+<img src="../img/TCP_packet.png" alt="圖、TCP的封包結構" /><p class="caption">圖、TCP的封包結構</p>
+</div>
+<p>1975年，ARPA網被轉交到美國國防部通信處（Defense Department Communicationg Agence）。此後ARPA網不再是實驗性和獨一無二的了。大量新的網路在1970年代開始出現，包括計算機科學研究網路（CSNET,Computer Science Research Network），加拿大網路（CDnet,Canadian Network），因時網（BITNET,Because It's Time Network）和美國國家自然科學基金網路（NSFnet,National Science Foundation Network）。最後一個網路最終將在它自身被商業網路取代前代替ARPA網作為互聯網的高速鏈路。</p>
+<div class="figure">
+<img src="../img/350px-IP_stack_connections.svg.png" alt="圖、兩個網際網路主機通過兩個路由器和對應的層連接。各主機上的應用通過一些資料通道相互執行讀取操作。" /><p class="caption">圖、兩個網際網路主機通過兩個路由器和對應的層連接。各主機上的應用通過一些資料通道相互執行讀取操作。</p>
+</div>
+<p>1977年11月，三個網路之間的TCP/IP測試在美國、英國和挪威之間進行。在1978年到1983年間，其他一些TCP/IP原型在多個研究中心之間開發出來。ARPANET完全轉換到TCP/IP在1983年1月1日發生。1984年，美國國防部將TCP/IP作為所有計算機網路的標準。</p>
+<div class="figure">
+<img src="../img/800px-UDP_encapsulation.svg.png" alt="圖、TCP 封包沿著不同的層應用資料的封裝遞減" /><p class="caption">圖、TCP 封包沿著不同的層應用資料的封裝遞減</p>
+</div>
+<p>1982年中期ARPA網被停用，原先的交流協議NCP被禁用，只允許使用Cern的TCP/IP語言的網站交流。1983年1月1日，NCP成為歷史，TCP/IP開始成為通用協議。</p>
+<p>1983年ARPA網被分成兩部分，用於軍事和國防部門的軍事網（MILNET）和用於民間的 ARPA 網版本。</p>
+<p>1985年，因特網架構理事會舉行了一個三天有250家廠商代表參加的關於計算產業使用TCP/IP的工作會議，幫助協議的推廣並且引領它日漸增長的商業應用。 2005年9月9日卡恩和瑟夫由於他們對於美國文化做出的卓越貢獻被授予總統自由勛章。</p>
+<p>1985年成為 TCP/IP 協議突破的一年，當時它成為 UNIX 操作系統的組成部分。最終將它放進了 Sun 公司的微系統工作站。</p>
+<p>1986年，美國國家科學基金會建立了大學之間互聯的骨幹網路 NSFnet，這是互聯網歷史上重要的一步。在 1994年，NSFNET轉為商業運營。</p>
+<p>當免費的在線服務和商業的在線服務興起後，例如 Prodigy、FidoNet、Usenet、Gopher 等，當 NSFNET 成為互聯網中樞後，ARPA 網的重要性被大大減弱了。系統在 1989 年被關閉，1990 年正式退役。1995 年隨著網路開放予商業，網際網路中成功接入的比較重要的其他網路包括 Usenet、Bitnet 和多種商用 X.25 網路。</p>
+<h3 id="web-技術的興起">Web 技術的興起</h3>
+<div class="figure">
+<img src="../img/HKPL_Telnet.PNG" alt="圖、利用Telnet登入香港公共圖書館的資料查詢系統來源：http://zh.wikipedia.org/wiki/Telnet#mediaviewer/File:HKPL_Telnet.PNG" /><p class="caption">圖、利用Telnet登入香港公共圖書館的資料查詢系統<br/>來源：http://zh.wikipedia.org/wiki/Telnet#mediaviewer/File:HKPL_Telnet.PNG</p>
+</div>
+<p>雖然網路服務已經變多了，但事實上卻還很難進入到家庭裏，因為這種文字型的網路使用介面 (像現在的 PTT, TELENT 那種) 並不容易使用，因此這些網路通常只在研究機構或公司裏被使用著。</p>
+<div class="figure">
+<img src="../img/Neon2BBS.png" alt="圖、Welcome screen of Neon#2 BBS (Tornado)來源：http://en.wikipedia.org/wiki/Bulletin_board_system#mediaviewer/File:Neon2.png" /><p class="caption">圖、Welcome screen of Neon#2 BBS (Tornado)<br/>來源：http://en.wikipedia.org/wiki/Bulletin_board_system#mediaviewer/File:Neon2.png</p>
+</div>
+<div class="figure">
+<img src="../img/PTT.png" alt="圖、2013年8月30日的進站畫面，探險活寶角色來源：http://zh.wikipedia.org/wiki/PTT" /><p class="caption">圖、2013年8月30日的進站畫面，探險活寶角色<br/>來源：http://zh.wikipedia.org/wiki/PTT</p>
+</div>
+<p>還好、蒂姆·伯納斯-李 (Tim Berners-Lee) 發明了 HTML+URL+HTTP 這三樣法寶，創造了 World Wide Web 這個可以輕易用滑鼠點選就能到處瀏覽的網路架構，讓網路技術開始進入了家庭。</p>
+<p>Tim Berners-Lee 是第一個使用 HTML 網頁技術來分享資訊的人。他於 1990年 發明了第一個網頁瀏覽器 。在1991年3月，他把這個發明介紹給了他在 CERN (歐洲核子研究組織) 工作的朋友。從那時起，瀏覽器的發展就和網路的發展聯繫在了一起。</p>
+<div class="figure">
+<img src="../img/800px-WorldWideWeb_FSF_GNU.png" alt="圖、1990年，全球第一款網頁瀏覽器─WorldWideWeb於NeXT電腦誕生" /><p class="caption">圖、1990年，全球第一款網頁瀏覽器─WorldWideWeb於NeXT電腦誕生</p>
+</div>
+<p>在1990年的聖誕假期，Tim Berners-Lee 制作了 Web 所必須的基本工具：那就是第一個 Web 瀏覽器（同時也是編輯器）和第一個網頁伺服器。</p>
+<p>Tim Berners-Lee 並不是憑空突然製作出這些工具的，事實上、這是他構思了將近十年之後的結果。</p>
+<p>1980年 Tim Berners-Lee 構建的 ENQUIRE 項目。這是一個類似維基百科的超文本在線編輯數據庫。盡管這與我們現在使用的 Web 大不相同，但是它們有許多相同的核心思想.</p>
+<p>1989年3月，Tim Berners-Lee 撰寫了《關於信息化管理的建議》一文，文中提及ENQUIRE並且描述了一個更加精巧的管理模型。1990年11月12日他和羅伯特·卡里奧合作提出了一個更加正式的關於 Web 的建議。在1990年11月13日他在一臺 NeXT 工作站上寫了第一個網頁以實現他文中的想法。</p>
+<p>Web 的核心部分是由三個標準構成的：</p>
+<ul>
+<li>統一資源標識符（URI, 或稱 URL），這是一個統一的為資源定位的系統。</li>
+<li>超文本傳送協議（HTTP），它負責規定客戶端和服務器怎樣互相交流。</li>
+<li>超文本標記語言（HTML），作用是定義超文本文檔的結構和格式。</li>
+</ul>
+<p>不過、Tim Berners-Lee 的瀏覽器是文字模式的，就像現在你上 PTT 時所看到的類似，因此並不那麼吸引人。</p>
+<p>後來在 1993 年時,伊利諾大學厄巴納-香檳分校的 NCSA 組織在1993年所發表了一款視窗界面的瀏覽器,稱為 Mosaic，Mosaic 發表之後讓全世界都瘋狂的下載這個瀏覽器，讓 Web 成為風糜全球的超級網路系統, 點燃了網際網路的熱潮。</p>
+<div class="figure">
+<img src="../img/NCSA_Mosaic.PNG" alt="圖、NCSA Mosaic 3.0執行於Windows來源：http://zh.wikipedia.org/wiki/File:NCSA_Mosaic.PNG" /><p class="caption">圖、NCSA Mosaic 3.0執行於Windows<BR/>來源：http://zh.wikipedia.org/wiki/File:NCSA_Mosaic.PNG</p>
+</div>
+<p>到底、這款風糜世界的瀏覽器是誰開發出來的呢？這背後又有個傳奇故事。</p>
+<p>1992年，當時還是大學生的馬克·安德生（Marc Andreessen）被伊利諾伊大學的電腦應用中心聘為臨時工作人員，馬克·安德生提出設計一種簡單的瀏覽程式想法，能方便的檢索網路資料，於是招聘了幾個程式設計師花了六週的時間開發。</p>
+<p>1994年4月，馬克.安德生和矽谷圖形公司的創始人吉姆·克拉克（Jim Clark）在美國加州設立了「Mosaic Communication Corporation」。</p>
+<p>Mosaic 的最先版本（1993年1月）只能在 X Window 系統上執行，直到同年9月才支援 Macintosh 和 Windows 等作業系統。</p>
+<div class="figure">
+<img src="../img/800px-Mosaic-v3-screenshot.PNG" alt="圖、Mosaic v3.0在Windows XP版的截圖，現今的網頁瀏覽器型式大多來自它來源：http://zh.wikipedia.org/wiki/Mosaic#mediaviewer/File:Mosaic-v3-screenshot.PNG" /><p class="caption">圖、Mosaic v3.0在Windows XP版的截圖，現今的網頁瀏覽器型式大多來自它<br/>來源：http://zh.wikipedia.org/wiki/Mosaic#mediaviewer/File:Mosaic-v3-screenshot.PNG</p>
+</div>
+<p>Mosaic 公司成立後，由於伊利諾大學擁有 Mosaic 的商標版權，開發團隊必須徹底重新撰寫瀏覽器程式碼，且瀏覽器名稱更改為 Netscape Navigator，公司名字於1994年11月改名為「網景通訊公司」，此後沿用至今。</p>
+<p>現在 NCSA Mosaic 已無人在更新，無法正確呈現近幾年來新的網頁語法。但由於原始碼早已公開，任何有能力的程式設計師都可以拿它來做進一步的開發，Mosaic 對網際網路的貢獻將永載史冊。</p>
+<p>目前主流的瀏覽器，例如：微軟的 Internet Explorer 及 Mozilla Firefox 等，其早期版本皆以 Mosaic 為基礎而開發。微軟隨後買下 Spy Glass 公司的技術開發出 Internet Explorer 瀏覽器，而Mozilla Firefox 則是網景通訊家開放原始碼後所衍生出的版本。</p>
+<p>雖然有了視窗版圖形化的瀏覽器,但是瀏覽器的互動性仍然很受限,像是沒辦法在網頁上呈現動畫或互動式功能表,和現今所使用的瀏覽器功能還差上一截。</p>
+<p>為了彌補這個不足，「網景通訊公司」決定在瀏覽器裏加入一個簡單的程式語言，於是就創造出了LiveScript這個程式語言，後來「網景通訊公司」為了與昇陽公司 （Sun Inc.）合作之後將其改名為 JavaScript。</p>
+<p>Web 發展至此，已經形成了今日 Web 所需要的完整架構，剩下的就是不斷的精進並商業化，然後將全世界的科技人都捲入到 這個網路大發展的浪潮中，像是你看到的 Google、Facebook、雅虎奇摩、淘寶等都是基於 Web 技術的網站。</p>
+<div class="figure">
+<img src="../img/Firefox_Aurora_with_Australis.PNG" alt="圖、以 Mozilla Firefox 瀏覽中文維基百科的畫面" /><p class="caption">圖、以 Mozilla Firefox 瀏覽中文維基百科的畫面</p>
+</div>
+<p>現在、不只電腦可以上網，瀏覽 Web，手機和 iPad 等行動裝置也都離不開 Web，一個不能上網的電腦或平板，將會是沒有人想要用的。</p>
+<p>這些、都要歸功於那個基於 TCP/IP 與基於 HTTP/HTML/URL/CSS/JavaScript 的 Web 網路架構，以及這段複雜又迷人的網路技術開發史！</p>
+<h3 id="參考文獻">參考文獻</h3>
+<ul>
+<li><a href="http://zh.wikipedia.org/wiki/ARPANET">維基百科：ARPANET</a></li>
+<li><a href="http://zh.wikipedia.org/wiki/Internet">維基百科：Internet</a></li>
+<li><a href="http://zh.wikipedia.org/wiki/%E4%BA%92%E8%81%94%E7%BD%91%E5%8E%86%E5%8F%B2">維基百科：互聯網歷史</a></li>
+<li><a href="http://zh.wikipedia.org/wiki/%E4%BC%A0%E8%BE%93%E6%8E%A7%E5%88%B6%E5%8D%8F%E8%AE%AE">維基百科：傳輸控制協議</a></li>
+<li><a href="http://zh.wikipedia.org/wiki/TCP/IP%E5%8D%8F%E8%AE%AE%E6%97%8F">維基百科：TCP/IP協議族</a></li>
+<li><a href="http://zh.wikipedia.org/wiki/web">維基百科：Web</a></li>
+<li><a href="http://zh.wikipedia.org/wiki/JavaScript">維基百科：JavaScript</a></li>
+<li><a href="http://zh.wikipedia.org/zh-tw/%E7%BD%91%E9%A1%B5%E6%B5%8F%E8%A7%88%E5%99%A8">維基百科：網頁瀏覽器</a></li>
+<li><a href="http://zh.wikipedia.org/wiki/Mosaic">維基百科：Mosaic</a></li>
+<li><a href="http://zh.wikipedia.org/wiki/NCSA_Mosaic">維基百科：NCSA Mosaic</a></li>
+<li><a href="http://zh.wikipedia.org/zh-tw/BBS">維基百科：BBS</a></li>
+</ul>
+<p>【本文由陳鍾誠取材並修改自 <a href="http://zh.wikipedia.org/">維基百科</a>，採用創作共用的 <a href="http://creativecommons.org/licenses/by-sa/3.0/tw/">姓名標示、相同方式分享</a> 授權】</p>
+<h2 id="基於-httphtmlcssjavascript-的-web-技術">基於 HTTP/HTML/CSS/JavaScript 的 Web 技術</h2>
+<p>Web 技術是建構在 Internet 這個基礎網路架構之上的一個應用層網路架構，Interent 網路所採用的協定為 TCP/IP ，而 Web 則是在 TCP/IP 之上再加上一層 HTTP 協定。</p>
+<h3 id="networkinternet-與-web">Network、Internet 與 Web</h3>
+<p>在英文當中、Network、Internet 與 Web 這些名詞是區分得很清楚的，但是對於中文使用者而言，這三個名詞卻很難釐清，不過對於程式人員而言，區分這幾個名詞是很重要的是，特別是 Internet 與 Web 這兩個名詞，首先讓我們來看看這些名詞的差異。</p>
+<p>英文中的 Network 泛指任何的網路，包含像公路也叫做 Traffic Network，因此即使在電腦領域，Network 仍然泛指任何網路，包含區域網路、廣域網路、Internet、Ethernet 等等都是 Network。</p>
+<p>Internet 是指 1960 年代美國國防部 (Department of Defense, DoD) 所發展出來的那個網路，原本稱為 ARPANET，後來延伸到全世界之後，就稱為 Internet 了。</p>
+<p>1990 年 Tim Burner Lee 創造了 HTML 、URL、與全世界第一個 WebServer，從此開始創造出一個基於 Internet 的網路架構，這個網路架構被稱為 World Wide Web (簡稱為 Web 或 WWW)，後來在 1992 年當時 Marc Andreessen 招聘了一些程式員開發出一個稱為 Mosaic 的瀏覽器 (Browser, 也就是 Web 的 Client 介面) 之後，推動了 Web 的急速發展。</p>
+<p>所以，凡是透過瀏覽器接觸到的網路，通常就是 Web 。而不是透過瀏覽器接觸到網路的軟體，則通常是基於 Internet 的應用程式。所以您用 Internet Explorer, Firefox, Chrome, Safari 等瀏覽器所看到的網站，其實都是一個一個的 Web 程式所組成的，而那些不經過瀏覽器，而是要另外安裝的應用程式，像是 Skype、MSN 等，則是 Internet 應用程式。</p>
+<p>本書的焦點是 Web 的程式設計，也就是網站的設計，而非像 Skype、MSN 這樣的 Internet 應用程式。</p>
+<p>如果您想學習的是 Internet 應用程式的設計，筆者另外有寫一本採用 C# 的程式設計書籍，請參閱該書，該書的網址如下：</p>
+<ul>
+<li><a href="http://ccckmit.github.io/csharpbook/htm/book.html" class="uri">http://ccckmit.github.io/csharpbook/htm/book.html</a></li>
+</ul>
+<h3 id="web-的相關技術">Web 的相關技術</h3>
+<p>HTTP 是 Web (台灣稱「全球資訊網」、中國大陸稱「萬維網」) 的基礎協定，該協定架構在 TCP/IP 架構之上，屬於應用層的協定。構成 HTTP 的主要兩個應用程式是瀏覽器 (Browser) 與網站 (Web Server)。HTTP 是一個典型的 Client-Server (客戶端-伺服端) 架構的協定，使用者透過 Client 端的瀏覽器連結到 Server 的伺服器，然後由伺服端將結果以 HTML 的網頁格式傳回。 HTML 的網頁當中包含了許多超連結 (Hyperlink)，這些超連結連接到某些網址 (URL)，於是使用者可以透過瀏覽器中的超連結，進一步點選其他的網頁，進行網路瀏覽的行為。</p>
+<p>絕大部分的使用者，現在都是使用 Internet Explorer, Firefox, Chrome, Safari 等瀏覽器在上網，因此所使用到的就是 Web 程式，本書的焦點也正是這種基於 Web 的程式技術。</p>
+<p>Web 相關的技術非常的多，其中最核心的部分是 HTTP/HTML/URL/CSS/JavaScript 等技術，而圍繞著這些核心技術上所發展出來的技術則難以數計，像是 PHP、ASP/ASP.NET、JSP、Ruby on Rail、Python/Dejango、Node.js、XML、JSON、XMLHTTP、AJAX、jQuery 等等，本書後面的章節將採用一個最少語言的架構，以 JavaScript 為核心，採用 HTML + CSS + JavaScript 為主要技術，並搭配 JavaScript 所衍生出的 jQuery 與 Node.js 等技術，以建構出完整的 Web 程式設計概念。</p>
+<blockquote>
+<p>Web = HTTP + HTML + CSS + JavaScript + jQuery + Node.js 所組成的 Web Programming 技術</p>
+</blockquote>
+<p>其中、HTTP 是所有技術的起點，讓我們先來看看 HTTP 到底做了甚麼事。</p>
+<h3 id="html-與-http">HTML 與 HTTP</h3>
+<p>當您用 Browser 看網站的時候，到底 Browser 傳遞什麼訊息給 Server，而 Server 又回傳神麼訊息給 Browser 呢？</p>
+<p>粗略的說、一個最簡單的 Web Server 之功能包含下列三個步驟：</p>
+<ul>
+<li>步驟一 : 接收瀏覽器所傳來的網址。</li>
+<li>步驟二 : 取出相對應的檔案。</li>
+<li>步驟三 : 將檔案內容傳回給瀏覽器。</li>
+</ul>
+<p>然而、在這個接收與傳回的過程中，所有的資訊都必須遵照固定的格式，規範這個接收/傳送格式的協定，稱為超文字傳送協定 (Hyper Text Transfer Protocol)，簡稱為 HTTP 協定。</p>
+<p>HTTP 協定格式的基礎，乃是建構在網址 URL 上的傳輸方式，早期只能用來傳送簡單的 HTML 檔案，後來經擴充後也可以傳送 其他類型的檔案，包含 影像、動畫、簡報、Word 文件等。</p>
+<p>在本文中，我們將先簡介 HTTP 協定的訊息內容，然後在介紹如何以 Java 語言實作 HTTP 協定，以建立一個簡單的 Web Server。</p>
+<h3 id="http-協定">HTTP 協定</h3>
+<p>當你在 Browser 上打上網址(URL)後， Browser 會傳出一個HTTP訊息給對應的 Web Server，Web Server 再接收到這個訊息後， 根據網址取出對應的檔案，並將該檔案以 HTTP 格式的訊息傳回給瀏覽器，以下是這個過程的一個範例。</p>
+<p>豬小弟上網，在瀏覽器中打上 http://ccc.kmit.edu.tw/index.htm，於是、瀏覽器傳送下列訊息給 ccc.kmit.edu.tw 這台電腦。</p>
+<pre><code>GET /index.htm HTTP/1.0
+Accept: image/gif, image/jpeg, application/msword, */*
+Accept-Language: zh-tw
+User-Agent: Mozilla/4.0
+Content-Length: 
+Host: ccc.kmit.edu.tw
+Cache-Control: max-age=259200
+Connection: keep-alive
+</code></pre>
+<p>當 ccc.kmit.edu.tw 電腦上的 Web Server 程式收到上述訊息後，會取出指定的路徑 /index.htm ，然後根據預設的網頁根目錄 (假設為 c:)，合成一個 c:.htm 的絕對路徑，接著從磁碟機中取出該檔案，並傳回下列訊息給豬小弟的瀏覽器。</p>
+<pre><code>HTTP/1.0 200 OK
+Content-Type: text/html
+Content-Length: 438
+&amp;lt;html&amp;gt;
+  ....
+&amp;lt;/html&amp;gt;</code></pre>
+<p>其中第一行 HTTP/1.0 200 OK 代表該網頁被成功傳回，第二行 Content-Type: text/html 代表傳回文件為 HTML 檔案， Content-Length: 438 代表該 HTML 檔案的大小為 438 位元組。</p>
+<p>換言之、 Browser 會傳遞一個包含網頁路徑的表頭資訊給 Server，而 Server 則會回傳一個 HTML 檔案給 Browser，這樣的傳送格式與規則，就稱為 HTTP 協定。</p>
+<p>在 Web 開始成長之後，這樣的模式就顯得有點不足了，因為很多網頁需要使用者填入一些欄位，像是帳號密碼等資訊，但是上述的表頭並沒有欄位資訊預留空間，於是為了回傳這些使用者填入的訊息，有人想到了可以在網址的後面補上參數，這種方式就稱為 GET 的參數傳送方式，以下是一個傳送帳號密碼的表頭訊息，其中的 ?user=ccc&amp;password=1234567 是 Browser 傳送給 Server 的參數。</p>
+<pre><code>GET /login?user=ccc&amp;password=1234567 HTTP/1.0
+Accept: image/gif, image/jpeg, application/msword, */*
+Accept-Language: zh-tw
+User-Agent: Mozilla/4.0
+Content-Length: 
+Host: ccc.kmit.edu.tw
+Cache-Control: max-age=259200
+Connection: keep-alive
+</code></pre>
+<p>但是後來，這些填入的欄位越來越多，傳送的參數訊息也越來越長，而這些訊息有些也不希望被顯示在網址列上讓大家看到，因此又發展出了另外一種參數傳遞方式，這種方式就稱為 POST，以下是POST訊息的一個範例。</p>
+<pre><code>POST /msg.php HTTP/1.0
+Accept: image/gif, image/jpeg, application/msword, */*
+Accept-Language: zh-tw
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/4.0
+Content-Length: 66
+Host: ccc.kmit.edu.tw
+Cache-Control: max-age=259200
+Connection: keep-alive
+
+user=ccc&amp;password=1234&amp;msg=Hello+%21+%0D%0AHow+are+you+%21%0D%0A++</code></pre>
+<p>上述表頭中的最後一句「user=ccc&amp;password=1234&amp;msg=Hello+%21+%0D%0AHow+are+you+%21%0D%0A++」是三個欄位參數被編碼後的結果，其中的 user 欄位值是 ccc，password 欄位值是 1234，而 msg 的值則是下列文章。</p>
+<pre><code>Hello !
+How are you !</code></pre>
+<p>POST 訊息與 GET 訊息不同的地方，除了在 HTTP 的訊息開頭改以 POST 取代 GET 之外，並且多了一個 Content-Length:66 的欄位，該欄位指示了訊息結尾會有 66 個位元組的填表資料，這些資料會被編碼後以文字模式在網路上傳遞。</p>
+<p>一但 Server 取得了 Browser 傳來的 GET 或 POST 訊息後，就可以根據其訊息以進行對應的動作，像是檢查帳號密碼是否正確、將某些訊息存入資料庫、然後在透過 HTML 的方式傳送回應畫面給 Browser，這種透過 HTTP 與 HTML 的簡單互動方式，正是由 World Wide Web 所帶來的核心技術，也讓全世界都捲入了這個影響深遠的網路革命當中。</p>
+<p>若您對 WebServer 的運作方式有興趣，可以參考筆者的三個程式與文章，這三個程式分別以 Java、C# 與 JavaScript/Node.js 寫成，這會讓您能夠更深入的體會 WebServer 與 HTTP 的運作原理。</p>
+<ul>
+<li>如何設計簡單的 WebServer? (Java 版) -- <a href="http://ccckmit.wikidot.com/code:webserver" class="uri">http://ccckmit.wikidot.com/code:webserver</a></li>
+<li>如何設計簡單的 WebServer? (C# 版) -- <a href="http://cs0.wikidot.com/webserver" class="uri">http://cs0.wikidot.com/webserver</a></li>
+<li>如何設計簡單的 WebServer? (JavaScript/Node.js 版) -- <a href="http://ccckmit.wikidot.com/js:nodewebserver" class="uri">http://ccckmit.wikidot.com/js:nodewebserver</a></li>
+</ul>
+<p>註：curl 這個工具聽說很適合用來觀察各種協定的運作原理，不過筆者還沒用過，未來會了再寫出來給大家看看！ * <a href="http://curl.haxx.se/download.html" class="uri">http://curl.haxx.se/download.html</a></p>
+<h3 id="參考文獻-1">參考文獻</h3>
+<ul>
+<li>How Java Web Servers Work -- <a href="http://www.onjava.com/pub/a/onjava/2003/04/23/java_webserver.html" class="uri">http://www.onjava.com/pub/a/onjava/2003/04/23/java_webserver.html</a></li>
+<li>JDK API : java.net.ServerSocket -- <a href="http://java.sun.com/j2se/1.4.2/docs/api/java/net/ServerSocket.html" class="uri">http://java.sun.com/j2se/1.4.2/docs/api/java/net/ServerSocket.html</a></li>
+<li>Hypertext Transfer Protocol (HTTP/1.0) -- <a href="http://www.w3.org/Protocols/HTTP/1.0/draft-ietf-http-spec.html" class="uri">http://www.w3.org/Protocols/HTTP/1.0/draft-ietf-http-spec.html</a></li>
+</ul>
+<p>【本文由陳鍾誠取材並修改自 <a href="http://zh.wikipedia.org/">維基百科</a>，採用創作共用的 <a href="http://creativecommons.org/licenses/by-sa/3.0/tw/">姓名標示、相同方式分享</a> 授權】</p>
+<h2 id="html-網頁設計">HTML 網頁設計</h2>
+<h3 id="htmlcss-與-javascript">HTML、CSS 與 JavaScript</h3>
+<p>HTML、CSS 與 JavaScript 是讓 Web Browser 運作的三大技術，要學會 Web 程式設計的第一步，就是要學會這三項技術，在本章中，我們將從最基礎的 HTML 開始。</p>
+<p>如果您想要學習這些技術，筆者強烈的推薦您觀看 w3schools 這個網站，網址如下。</p>
+<ul>
+<li><a href="http://www.w3schools.com/" class="uri">http://www.w3schools.com/</a></li>
+</ul>
+<p>學習 HTML、CSS、JavaScript 的順序，最好先從 HTML 開始，因為 HTML 最簡單，而且是整個 Web 技術的表現語言，學會 HTML 之後就可以學習 CSS，看看如何對 HTML 進行格式化套表呈現的動作，然後再進一步學習 JavaScript 這個小型程式語言，以便讓網頁更加動態，增強網頁的的互動功能。</p>
+<p>以下是 w3schools 當中這三個主題的網頁，如果您是一個程式設計師，相信您可以用很短的時間就學會這些主題。</p>
+<ul>
+<li><a href="http://www.w3schools.com/html/default.asp" class="uri">http://www.w3schools.com/html/default.asp</a></li>
+<li><a href="http://www.w3schools.com/css/default.asp" class="uri">http://www.w3schools.com/css/default.asp</a></li>
+<li><a href="http://www.w3schools.com/js/default.asp" class="uri">http://www.w3schools.com/js/default.asp</a></li>
+</ul>
+<p>一但學會了 HTML、CSS、JavaScript 這三種技術，您就可以開始向 Server 端的技術邁進了。</p>
+<h3 id="簡易網頁">簡易網頁</h3>
+<p>HTML 網頁是一種純文字檔案，您只要用記事本這樣的文字編輯器就可以輕易的編出來，以下是一個範例：</p>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;html&gt;</span>
+<span class="kw">&lt;body&gt;</span>
+Hello!
+<span class="kw">&lt;/body&gt;</span>
+<span class="kw">&lt;/html&gt;</span></code></pre>
+<p>檢視檔案：<a href="https://dl.dropbox.com/u/101584453/web/wp/code/hello1.htm" class="uri">https://dl.dropbox.com/u/101584453/web/wp/code/hello1.htm</a></p>
+<p>您可以看到在上述範例中，Hello! 訊息被夾在 <code>&lt;body&gt;</code> 與 <code>&lt;/body&gt;</code> 中間，而外層又有 <code>&lt;html&gt;</code> 與 <code>&lt;/html&gt;</code> 包覆，像這樣的結構稱為標記語言 (Markup Language)。</p>
+<p>如果我們在上述文件中再加上一句 <code>&lt;a href=&quot;http://tw.yahoo.com/&quot;&gt;Yahoo!&lt;/a&gt;</code> 這樣的標記，那麼網頁中將會出現 Yahoo! 這個詞彙，該詞彙通常是藍色文字，而且可以用滑鼠點擊，當您點擊之後網頁就會被導到 Yahoo 台灣的首頁，這種點選後會導入另一個網頁的機制是 Web 的最大特色，稱為 Hyperlink (超連結)，而那些被 <code>&lt;a&gt; &lt;/a&gt;</code> 標記起來的文字，就稱為 Hyper Text (超文字)。</p>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;html&gt;</span>
+<span class="kw">&lt;body&gt;</span>
+Hello! 
+<span class="kw">&lt;a</span><span class="ot"> href=</span><span class="st">&quot;http://tw.yahoo.com/&quot;</span><span class="kw">&gt;</span>Yahoo!<span class="kw">&lt;/a&gt;</span>
+<span class="kw">&lt;/body&gt;</span>
+<span class="kw">&lt;/html&gt;</span></code></pre>
+<p>(筆者註：標記 a 當中的 href 是 Hyperlink Reference (超連結引用) 的縮寫，而 a 則是 anchor (錨) 的意思)。</p>
+<p>檢視檔案：<a href="https://dl.dropbox.com/u/101584453/web/wp/code/hello2.htm" class="uri">https://dl.dropbox.com/u/101584453/web/wp/code/hello2.htm</a></p>
+<p>而這也正是 HTML 之全名 Hyper Text Markup Language 的意義，也就是一種含有超連結的標記語言。</p>
+<p>由於 HTML 標記語言是有層次性的，因此在排版時我們經常都會使用縮排以凸顯出這種層次感，例如以上的範例經過縮排之後就變成了如下的情況。</p>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;html&gt;</span>
+    <span class="kw">&lt;body&gt;</span>
+        Hello! 
+        <span class="kw">&lt;a</span><span class="ot"> href=</span><span class="st">&quot;http://tw.yahoo.com/&quot;</span><span class="kw">&gt;</span>Yahoo!<span class="kw">&lt;/a&gt;</span>
+    <span class="kw">&lt;/body&gt;</span>
+<span class="kw">&lt;/html&gt;</span></code></pre>
+<p>檢視檔案：<a href="https://dl.dropbox.com/u/101584453/web/wp/code/hello3.htm" class="uri">https://dl.dropbox.com/u/101584453/web/wp/code/hello3.htm</a></p>
+<p>這樣的結構看起來更加一目了然，能夠凸顯出每個層次之間的包含關係。</p>
+<h3 id="html-的表頭">HTML 的表頭</h3>
+<p>雖然上述範例已經是 HTML 網頁了，而且也通常可以正常檢視了，但是還不夠完整，一個完整的 HTML 網頁通常要包含足夠的表頭資訊，以便讓瀏覽器能正確的辨認這個網頁的類型與編碼方式，以下是一個範例：</p>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="dt">&lt;!DOCTYPE </span>html<span class="dt">&gt;</span>
+<span class="kw">&lt;html&gt;</span>
+    <span class="kw">&lt;head&gt;</span>
+        <span class="kw">&lt;meta</span><span class="ot"> charset=</span><span class="st">&#39;utf-8&#39;</span><span class="kw">&gt;</span> 
+    <span class="kw">&lt;/head&gt;</span>
+    <span class="kw">&lt;body&gt;</span>
+        Hello! 你好！
+        <span class="kw">&lt;a</span><span class="ot"> href=</span><span class="st">&quot;http://tw.yahoo.com/&quot;</span><span class="kw">&gt;</span>Yahoo!<span class="kw">&lt;/a&gt;</span>
+    <span class="kw">&lt;/body&gt;</span>
+<span class="kw">&lt;/html&gt;</span></code></pre>
+<p>檢視檔案：<a href="https://dl.dropbox.com/u/101584453/web/wp/code/hello4.htm" class="uri">https://dl.dropbox.com/u/101584453/web/wp/code/hello4.htm</a></p>
+<div class="figure">
+<img src="../img/HtmlHello4.png" alt="圖、上述網頁的檢視畫面" /><p class="caption">圖、上述網頁的檢視畫面</p>
+</div>
+<p>其中第一句的 <code>&lt;!DOCTYPE html&gt;</code> 是告訴瀏覽器，這個文件是一個 HTML 檔案，而 <code>&lt;meta charset='utf-8'&gt;</code> 這句話，則是告訴瀏覽器這個文件的編碼是用 UTF-8 的格式。</p>
+<p>所以您必須將上述檔案，儲存成 unicode 的 UTF-8 格式，這樣網頁才能正確運作，否則就有可能出現亂碼的情況，以下是筆者使用 Notepad++ 設定 UTF-8 格式的情況。</p>
+<div class="figure">
+<img src="../img/NotepadUtf8.png" alt="圖、筆者使用 Notepad++ 設定 UTF-8 格式的畫面" /><p class="caption">圖、筆者使用 Notepad++ 設定 UTF-8 格式的畫面</p>
+</div>
+<h3 id="格式化">格式化</h3>
+<p>從上述範例中，您可以看到即使我們在 HTML 的原始文字檔案中進行換行，但是呈現出來的結果卻沒有換行，如果您真的想要強制換行的話，在 HTML 當中必須用 <code>&lt;BR/&gt;</code> 這個標記，才能讓文字真正換行。</p>
+<p>但是強制換行並不是一個好的寫法，比較好的方法是用段落標記 <code>&lt;p&gt;...&lt;/p&gt;</code> 把您的段落包起來，這樣在段落結束後就會換行了。</p>
+<p>另外、還有 <code>&lt;b&gt;...&lt;/b&gt;</code> 標記 (也可以用 <code>&lt;strong&gt; ... &lt;/strong&gt;</code>) 可以讓文字變粗體，而 <code>&lt;i&gt;...&lt;/i&gt;</code> 指令則可以讓文字呈現斜體，<code>&lt;em&gt; ... &lt;/em&gt;</code> 標記可以強調文字，而 <code>&lt;code&gt;...&lt;/code&gt;</code> 可以讓文字以類似程式碼的字型輸出。</p>
+<p>若要讓文字變成上標，可以用 <code>&lt;sup&gt;...&lt;/sup&gt;</code>，或用 <code>&lt;sub&gt;...&lt;/sub&gt;</code> 則可以讓文字變下標，以下範例綜合的呈現了這些格式化標記的結果。</p>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="dt">&lt;!DOCTYPE </span>html<span class="dt">&gt;</span>
+<span class="kw">&lt;html&gt;</span>
+    <span class="kw">&lt;head&gt;</span>
+        <span class="kw">&lt;meta</span><span class="ot"> charset=</span><span class="st">&#39;utf-8&#39;</span><span class="kw">&gt;</span> 
+    <span class="kw">&lt;/head&gt;</span>
+    <span class="kw">&lt;body&gt;</span>
+      一般字體 (Plain Text) <span class="kw">&lt;BR/&gt;</span>
+      <span class="kw">&lt;i&gt;</span>斜體 (Italic)<span class="kw">&lt;/i&gt;</span> <span class="kw">&lt;BR/&gt;</span>
+      <span class="kw">&lt;b&gt;</span>粗體 (Bold)<span class="kw">&lt;/b&gt;</span> <span class="kw">&lt;BR/&gt;</span>
+      <span class="kw">&lt;p&gt;</span>
+        <span class="kw">&lt;strong&gt;</span>明顯 (Strong)<span class="kw">&lt;/strong&gt;</span>
+        <span class="kw">&lt;em&gt;</span>強調 (Emphasized)<span class="kw">&lt;/em&gt;</span>
+      <span class="kw">&lt;/p&gt;</span>
+      <span class="kw">&lt;p&gt;</span>
+        這是 <span class="kw">&lt;sup&gt;</span>上標<span class="kw">&lt;/sup&gt;</span> 與 <span class="kw">&lt;sub&gt;</span>下標<span class="kw">&lt;/sub&gt;</span> 的顯示情況！
+      <span class="kw">&lt;/p&gt;</span>
+    <span class="kw">&lt;/body&gt;</span>
+<span class="kw">&lt;/html&gt;</span></code></pre>
+<p>檢視檔案：<a href="https://dl.dropbox.com/u/101584453/web/wp/code/format.htm" class="uri">https://dl.dropbox.com/u/101584453/web/wp/code/format.htm</a></p>
+<div class="figure">
+<img src="../img/HtmlFormat.png" alt="圖、各種格式標記的網頁檢視畫面" /><p class="caption">圖、各種格式標記的網頁檢視畫面</p>
+</div>
+<h3 id="標題">標題</h3>
+<p>HTML 的章節標題共有六種層次，從 h1 到 h6，通常 h1 代表最大的第一層標題，會用最大的字型顯示，而 h6 則是最小的第六層標題，會用最小的字型顯示。</p>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;h1&gt;</span>第 1 層段落標題<span class="kw">&lt;/h1&gt;</span>
+<span class="kw">&lt;h2&gt;</span>第 2 層段落標題<span class="kw">&lt;/h2&gt;</span>
+<span class="kw">&lt;h3&gt;</span>第 3 層段落標題<span class="kw">&lt;/h3&gt;</span>
+<span class="kw">&lt;h4&gt;</span>第 4 層段落標題<span class="kw">&lt;/h4&gt;</span>
+<span class="kw">&lt;h5&gt;</span>第 5 層段落標題<span class="kw">&lt;/h5&gt;</span>
+<span class="kw">&lt;h6&gt;</span>第 6 層段落標題<span class="kw">&lt;/h6&gt;</span></code></pre>
+<p>而整個網頁的標題則是用 <code>&lt;title&gt;...&lt;/title&gt;</code> 進行標記，如下所示。</p>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;title&gt;</span>網頁標題<span class="kw">&lt;/title&gt;</span></code></pre>
+<p>以下是這些標題的使用範例，您可以點選看看。</p>
+<p>檢視檔案：<a href="https://dl.dropbox.com/u/101584453/web/wp/code/header1_6.htm" class="uri">https://dl.dropbox.com/u/101584453/web/wp/code/header1_6.htm</a></p>
+<div class="figure">
+<img src="../img/HtmlHeader1_6.png" alt="圖、Header 1-6 的網頁檢視畫面" /><p class="caption">圖、Header 1-6 的網頁檢視畫面</p>
+</div>
+<h3 id="影像-image">影像 Image</h3>
+<p>在 HTML 中，要顯示影像或圖片，只要使用 <code>&lt;img src=&quot;圖片相對路徑&quot;&gt;</code> 就行了。如果要指定大小，就可以加上 width 與 height 屬性，如以下範例所示。</p>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;img</span><span class="ot"> src=</span><span class="st">&quot;F7501.gif&quot;</span><span class="kw">/&gt;</span>
+<span class="kw">&lt;img</span><span class="ot"> src=</span><span class="st">&quot;F7501.gif&quot;</span><span class="ot"> width=</span><span class="st">&quot;200&quot;</span><span class="ot"> height=</span><span class="st">&quot;300&quot;</span><span class="kw">/&gt;</span>
+<span class="kw">&lt;img</span><span class="ot"> src=</span><span class="st">&quot;F7501.gif&quot;</span><span class="ot"> width=</span><span class="st">&quot;20%&quot;</span><span class="kw">/&gt;</span></code></pre>
+<p>上述第一個指令 <code>&lt;img src=&quot;F7501.jpg&quot;/&gt;</code> 會按照原圖大小顯示，而 <code>&lt;img src=&quot;F7501.jpg&quot; width=&quot;300&quot; height=&quot;500&quot;/&gt;</code> 則會將圖形縮放到寬度 200，高度 300 的大小，最後一個用 20% 代表縮放到寬度為瀏覽器畫面視窗的百分之二十那麼大。</p>
+<p>檢視檔案：<a href="https://dl.dropbox.com/u/101584453/web/wp/code/img.htm" class="uri">https://dl.dropbox.com/u/101584453/web/wp/code/img.htm</a></p>
+<div class="figure">
+<img src="../img/HtmlImg.png" alt="圖、img 指令的網頁檢視畫面" /><p class="caption">圖、img 指令的網頁檢視畫面</p>
+</div>
+<p>評論：竟然趁機為自己的書打廣告，真是太惡劣了！....</p>
+<h3 id="表格-table">表格 Table</h3>
+<p>在 HTML 當中、有很多排版都是使用表格的方式製作的，例如「側欄、上方橫幅」等等，表格的語法如以下範例所示。</p>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;table&gt;</span>
+<span class="kw">&lt;tr&gt;</span>
+<span class="kw">&lt;th&gt;&lt;/th&gt;</span>
+<span class="kw">&lt;th&gt;</span>欄 1<span class="kw">&lt;/th&gt;</span>
+<span class="kw">&lt;th&gt;</span>欄 2<span class="kw">&lt;/th&gt;</span>
+<span class="kw">&lt;/tr&gt;</span>
+<span class="kw">&lt;tr&gt;</span>
+<span class="kw">&lt;th&gt;</span>列 1<span class="kw">&lt;/th&gt;</span>
+<span class="kw">&lt;td&gt;</span>1,1<span class="kw">&lt;/td&gt;</span>
+<span class="kw">&lt;td&gt;</span>1,2<span class="kw">&lt;/td&gt;</span>
+<span class="kw">&lt;/tr&gt;</span>
+<span class="kw">&lt;tr&gt;</span>
+<span class="kw">&lt;th&gt;</span>列 2<span class="kw">&lt;/th&gt;</span>
+<span class="kw">&lt;td&gt;</span>2, 1<span class="kw">&lt;/td&gt;</span>
+<span class="kw">&lt;td&gt;</span>2, 2<span class="kw">&lt;/td&gt;</span>
+<span class="kw">&lt;/tr&gt;</span>
+<span class="kw">&lt;/table&gt;</span></code></pre>
+<p>表格的語法都是由 <code>&lt;table&gt;...&lt;/table&gt;</code> 所夾住的，其中 <code>&lt;tr&gt;...&lt;/tr&gt;</code> 會夾住一個列，而每個列又可以分成數個欄，這些欄可能用 <code>&lt;th&gt;..&lt;/th&gt;</code> 或 <code>&lt;td&gt;...&lt;/td&gt;</code> 夾住，其中 th 通常是用在標頭、而 td 則是用在內容。</p>
+<p>檢視檔案：<a href="https://dl.dropbox.com/u/101584453/web/wp/code/table.htm" class="uri">https://dl.dropbox.com/u/101584453/web/wp/code/table.htm</a></p>
+<div class="figure">
+<img src="../img/table.jpg" alt="表格範例的顯示結果" /><p class="caption">表格範例的顯示結果</p>
+</div>
+<h3 id="項目-list">項目 list</h3>
+<p>HTML 的項目是用 <code>&lt;li&gt;...&lt;/li&gt;</code> 語法所框住的，如果在項目的外面加上 <code>&lt;ul&gt;...&lt;/ul&gt;</code> ，那就會顯示無編號的項目清單，若加上 <code>&lt;ol&gt;...&lt;/ol&gt;</code>，那就會顯示有編號的項目清單。</p>
+<p>無編號項目清單：</p>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;ul&gt;</span>
+<span class="kw">&lt;li&gt;</span>項目 1<span class="kw">&lt;/li&gt;</span>
+<span class="kw">&lt;li&gt;</span>項目 2<span class="kw">&lt;/li&gt;</span>
+<span class="kw">&lt;/ul&gt;</span></code></pre>
+<p>有編號項目清單：</p>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;ol&gt;</span>
+<span class="kw">&lt;li&gt;</span>項目 1<span class="kw">&lt;/li&gt;</span>
+<span class="kw">&lt;li&gt;</span>項目 2<span class="kw">&lt;/li&gt;</span>
+<span class="kw">&lt;/ol&gt;</span></code></pre>
+<p>檢視檔案：<a href="https://dl.dropbox.com/u/101584453/web/wp/code/list.htm" class="uri">https://dl.dropbox.com/u/101584453/web/wp/code/list.htm</a></p>
+<div class="figure">
+<img src="../img/list.jpg" alt="項目清單的顯示結果" /><p class="caption">項目清單的顯示結果</p>
+</div>
+<h3 id="表單-form">表單 Form</h3>
+<p>在 HTML 當中，表單 (Form) 是指可以讓使用者進行輸入的元件，其語法是用 <code>&lt;form&gt; ...&lt;/form&gt;</code> 夾住一堆的輸入元件，這些輸入元件包含 input (輸入)、 textarea (文字區)、 select (選項) 等，其中的 input 還可以根據其 type 欄位顯示成 checkbox, color, date, datetime, datetime-local, email, file, hidden, image, month, number, password, radio, range, reset, search, submit, tel, text, time, url, week 等各種不同的輸入欄形式，以下是一個表單的範例。</p>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;form</span><span class="ot"> action=</span><span class="st">&quot;signup&quot;</span><span class="ot"> method=</span><span class="st">&quot;post&quot;</span><span class="kw">&gt;</span>
+帳號: <span class="kw">&lt;input</span><span class="ot"> type=</span><span class="st">&quot;text&quot;</span><span class="ot"> name=</span><span class="st">&quot;user&quot;</span><span class="kw">/&gt;&lt;br/&gt;</span>
+密碼: <span class="kw">&lt;input</span><span class="ot"> type=</span><span class="st">&quot;password&quot;</span><span class="ot"> name=</span><span class="st">&quot;password&quot;</span><span class="kw">/&gt;&lt;br/&gt;</span>
+信箱: <span class="kw">&lt;input</span><span class="ot"> type=</span><span class="st">&quot;email&quot;</span><span class="ot"> name=</span><span class="st">&quot;email&quot;</span><span class="kw">/&gt;&lt;br/&gt;</span>
+生日: <span class="kw">&lt;input</span><span class="ot"> type=</span><span class="st">&quot;date&quot;</span><span class="ot"> name=</span><span class="st">&quot;birthday&quot;</span><span class="kw">/&gt;&lt;br/&gt;</span>
+照片: <span class="kw">&lt;input</span><span class="ot"> type=</span><span class="st">&quot;file&quot;</span><span class="ot"> name=</span><span class="st">&quot;picture&quot;</span><span class="kw">/&gt;&lt;br/&gt;</span>
+性別: <span class="kw">&lt;input</span><span class="ot"> type=</span><span class="st">&quot;radio&quot;</span><span class="ot"> name=</span><span class="st">&quot;sex&quot;</span><span class="ot"> value=</span><span class="st">&quot;male&quot;</span><span class="ot"> checked</span><span class="kw">/&gt;</span> 男
+      <span class="kw">&lt;input</span><span class="ot"> type=</span><span class="st">&quot;radio&quot;</span><span class="ot"> name=</span><span class="st">&quot;sex&quot;</span><span class="ot"> value=</span><span class="st">&quot;female&quot;</span><span class="kw">/&gt;</span> 女<span class="kw">&lt;br/&gt;</span>
+血型: <span class="kw">&lt;select</span><span class="ot"> name=</span><span class="st">&quot;BloodType&quot;</span><span class="kw">&gt;</span>
+        <span class="kw">&lt;option</span><span class="ot"> value=</span><span class="st">&quot;A&quot;</span><span class="kw">&gt;</span>A 型<span class="kw">&lt;/option&gt;</span>
+        <span class="kw">&lt;option</span><span class="ot"> value=</span><span class="st">&quot;B&quot;</span><span class="kw">&gt;</span>B 型<span class="kw">&lt;/option&gt;</span>
+        <span class="kw">&lt;option</span><span class="ot"> value=</span><span class="st">&quot;AB&quot;</span><span class="kw">&gt;</span>AB 型<span class="kw">&lt;/option&gt;</span>
+        <span class="kw">&lt;option</span><span class="ot"> value=</span><span class="st">&quot;O&quot;</span><span class="kw">&gt;</span>O 型<span class="kw">&lt;/option&gt;</span>
+      <span class="kw">&lt;/select&gt;</span> <span class="kw">&lt;br/&gt;</span>
+自我介紹： <span class="kw">&lt;br/&gt;</span>
+<span class="kw">&lt;textarea</span><span class="ot"> name=</span><span class="st">&quot;AboutMe&quot;</span><span class="kw">&gt;</span>
+<span class="kw">&lt;/textarea&gt;</span> <span class="kw">&lt;br/&gt;</span>
+
+<span class="kw">&lt;input</span><span class="ot"> type=</span><span class="st">&quot;submit&quot;</span><span class="ot"> value=</span><span class="st">&quot;送出&quot;</span><span class="kw">/&gt;&lt;input</span><span class="ot"> type=</span><span class="st">&quot;reset&quot;</span><span class="ot"> value=</span><span class="st">&quot;清除&quot;</span><span class="kw">/&gt;&lt;br/&gt;</span>
+<span class="kw">&lt;/form&gt;</span></code></pre>
+<p>檢視檔案：<a href="https://dl.dropbox.com/u/101584453/web/wp/code/form.htm" class="uri">https://dl.dropbox.com/u/101584453/web/wp/code/form.htm</a></p>
+<div class="figure">
+<img src="../img/form.jpg" alt="表單的顯示結果" /><p class="caption">表單的顯示結果</p>
+</div>
+<p>在上述的範例中，當 submit 類型的送出鈕被按下後，瀏覽器會將這些填寫的資訊，以第一章所說的 GET/POST 方式，發送給伺服器，如果 method 欄位是 GET，那麼會採用在 HTTP 表頭網址處傳送 singup?user=xxx&amp;password=xxx .....這樣的形式送出，這種方式會將密碼顯示在瀏覽器的網址列上，比較容易被看到，若 method 欄位是 POST，則會在 HTTP 表頭尾端加上 user=xxx&amp;password=xxx ... 的資訊，不會在網址列上被看到。當然、如果有人監控網路上訊息的話，還是會看得到這些輸入資訊。</p>
+<p>若要更安全，則必須採用 HTTPS 的 SSL 方式傳遞，這種方式會對訊息加密編碼，就比較不會有輸入訊息外洩的危險。</p>
+<h3 id="參考文獻-2">參考文獻</h3>
+<ul>
+<li>W3School : HTML Turorial -- <a href="http://www.w3schools.com/html/default.asp" class="uri">http://www.w3schools.com/html/default.asp</a></li>
+</ul>
+<h2 id="css-版面設計">CSS 版面設計</h2>
+<h3 id="css-簡介">CSS 簡介</h3>
+<p>在前一章當中，我們介紹了 HTML 的語法，我們可以透過 HTML 的表格排出某些格式，但是卻很難讓整個頁面足夠美觀。</p>
+<p>舉例而言，假如我們想讓表格的標頭欄以黑底白字的方式顯示，那麼就得靠 CSS 來幫忙了。</p>
+<p>CSS 是 Cascading Style Sheets 的簡稱，中文可翻譯為「串接樣式表」，CSS 主要是用來設定 HTML 的顯示版面，包含「字體、大小、顏色、邊框、背景」等等，一個好的 CSS 可以讓您的網頁變得很美觀，而且不需要大幅修改網頁的內容，只要加入一個 CSS 引用即可。</p>
+<p>當套用不同的 CSS 時，網頁的風格就可以產生完全不同的感覺，這讓你的網頁可以輕易的更換成不同的版型。事實上、當您在 blogspot 或 wordpress 網誌平台套用不同版型的時候，只不過是更換了 CSS 樣版而已。</p>
+<p>在 HTML 當中，CSS 有兩種寫法，一種是內嵌式的寫法，另一種是外連式的寫法。</p>
+<p>為了說明 CSS 的語法，先讓我們回顧一下，一個簡單沒有格式化的 HTML 表格，其寫法如下：</p>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;html&gt;</span>
+<span class="kw">&lt;head&gt;&lt;meta</span><span class="ot"> charset=</span><span class="st">&#39;utf-8&#39;</span><span class="kw">&gt;&lt;/head&gt;</span>
+<span class="kw">&lt;body&gt;</span>
+<span class="kw">&lt;table&gt;</span>
+<span class="kw">&lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;th&gt;</span>欄 1<span class="kw">&lt;/th&gt;&lt;th&gt;</span>欄 2<span class="kw">&lt;/th&gt;&lt;/tr&gt;</span>
+<span class="kw">&lt;tr&gt;&lt;th&gt;</span>列 1<span class="kw">&lt;/th&gt;&lt;td&gt;</span>1,1<span class="kw">&lt;/td&gt;&lt;td&gt;</span>1,2<span class="kw">&lt;/td&gt;&lt;/tr&gt;</span>
+<span class="kw">&lt;tr&gt;&lt;th&gt;</span>列 2<span class="kw">&lt;/th&gt;&lt;td&gt;</span>2,1<span class="kw">&lt;/td&gt;&lt;td&gt;</span>2,2<span class="kw">&lt;/td&gt;&lt;/tr&gt;</span>
+<span class="kw">&lt;/table&gt;</span>
+<span class="kw">&lt;/body&gt;</span>
+<span class="kw">&lt;/html&gt;</span></code></pre>
+<p>檢視檔案：<a href="https://dl.dropbox.com/u/101584453/web/wp/code/table.htm" class="uri">https://dl.dropbox.com/u/101584453/web/wp/code/table.htm</a></p>
+<p>如果我們將上述表格的 th 部分，都加上 <code>style=&quot;background-color:black; color:white;&quot;</code> 這樣的 CSS 語法，那麼我們就會得到一個黑底白字的表格。</p>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;html&gt;</span>
+<span class="kw">&lt;head&gt;&lt;meta</span><span class="ot"> charset=</span><span class="st">&#39;utf-8&#39;</span><span class="kw">&gt;&lt;/head&gt;</span>
+<span class="kw">&lt;body&gt;</span>
+<span class="kw">&lt;table&gt;</span>
+<span class="kw">&lt;tr&gt;</span>
+<span class="kw">&lt;th</span><span class="ot"> style=</span><span class="st">&quot;background-color:black; color:white;&quot;</span><span class="kw">&gt;&lt;/th&gt;</span>
+<span class="kw">&lt;th</span><span class="ot"> style=</span><span class="st">&quot;background-color:black; color:white;&quot;</span><span class="kw">&gt;</span>欄 1<span class="kw">&lt;/th&gt;</span>
+<span class="kw">&lt;th</span><span class="ot"> style=</span><span class="st">&quot;background-color:black; color:white;&quot;</span><span class="kw">&gt;</span>欄 2<span class="kw">&lt;/th&gt;</span>
+<span class="kw">&lt;/tr&gt;</span>
+<span class="kw">&lt;tr&gt;</span>
+<span class="kw">&lt;th</span><span class="ot"> style=</span><span class="st">&quot;background-color:black; color:white;&quot;</span><span class="kw">&gt;</span>列 1<span class="kw">&lt;/th&gt;</span>
+<span class="kw">&lt;td&gt;</span>1,1<span class="kw">&lt;/td&gt;</span>
+<span class="kw">&lt;td&gt;</span>1,2<span class="kw">&lt;/td&gt;</span>
+<span class="kw">&lt;/tr&gt;</span>
+<span class="kw">&lt;tr&gt;</span>
+<span class="kw">&lt;th</span><span class="ot"> style=</span><span class="st">&quot;background-color:black; color:white;&quot;</span><span class="kw">&gt;</span>列 2<span class="kw">&lt;/th&gt;</span>
+<span class="kw">&lt;td&gt;</span>2, 1<span class="kw">&lt;/td&gt;</span>
+<span class="kw">&lt;td&gt;</span>2, 2<span class="kw">&lt;/td&gt;</span>
+<span class="kw">&lt;/tr&gt;</span>
+<span class="kw">&lt;/table&gt;</span>
+<span class="kw">&lt;/body&gt;</span>
+<span class="kw">&lt;/html&gt;</span></code></pre>
+<p>檢視檔案：<a href="https://dl.dropbox.com/u/101584453/web/wp/code/table_css_embed.htm" class="uri">https://dl.dropbox.com/u/101584453/web/wp/code/table_css_embed.htm</a></p>
+<p>我們使用 CSS 排版前與排版後的結果可以對照如下：</p>
+<div class="figure">
+<img src="../img/table_css_embed.jpg" alt="表單的顯示結果" /><p class="caption">表單的顯示結果</p>
+</div>
+<p>您可以看到在這種寫法當中，我們幾乎都一直在 th 重複撰寫 <code>style=&quot;background-color:black; color:white;&quot;</code> 這一行文字，總共重複了 5 次，這顯然是很浪費時間的行為。</p>
+<p>如果我們可以改用統一的方式，寫出「對於所有 th 而言，我都要用 background-color:black; color:white; 這樣的方式顯示」那不就簡單多了嗎？</p>
+<p>是的、CSS 確實可以讓您這樣做，讓我們將上述範例修改成統一設定格式的版本，如下所示。</p>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;html&gt;</span>
+<span class="kw">&lt;head&gt;</span>
+<span class="kw">&lt;meta</span><span class="ot"> charset=</span><span class="st">&#39;utf-8&#39;</span><span class="kw">&gt;</span>
+<span class="kw">&lt;style&gt;</span>
+th <span class="kw">{</span> <span class="kw">background-color:</span><span class="dt">black</span><span class="kw">;</span> <span class="kw">color:</span><span class="dt">white</span><span class="kw">;</span> <span class="kw">}</span>
+<span class="kw">&lt;/style&gt;</span>
+<span class="kw">&lt;/head&gt;</span>
+<span class="kw">&lt;body&gt;</span>
+<span class="kw">&lt;table&gt;</span>
+<span class="kw">&lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;th&gt;</span>欄 1<span class="kw">&lt;/th&gt;&lt;th&gt;</span>欄 2<span class="kw">&lt;/th&gt;&lt;/tr&gt;</span>
+<span class="kw">&lt;tr&gt;&lt;th&gt;</span>列 1<span class="kw">&lt;/th&gt;&lt;td&gt;</span>1,1<span class="kw">&lt;/td&gt;&lt;td&gt;</span>1,2<span class="kw">&lt;/td&gt;&lt;/tr&gt;</span>
+<span class="kw">&lt;tr&gt;&lt;th&gt;</span>列 2<span class="kw">&lt;/th&gt;&lt;td&gt;</span>2,1<span class="kw">&lt;/td&gt;&lt;td&gt;</span>2,2<span class="kw">&lt;/td&gt;&lt;/tr&gt;</span>
+<span class="kw">&lt;/table&gt;</span>
+<span class="kw">&lt;/body&gt;</span>
+<span class="kw">&lt;/html&gt;</span></code></pre>
+<p>上述統一將 CSS 寫在 <code>&lt;head&gt;&lt;style&gt;...&lt;/style&gt;&lt;/head&gt;</code> 裏的這種寫法，比起內嵌式的顯然簡短多了，這種寫法正是 CSS 的精華之所在。</p>
+<p>但是、如果我們想要對整個網站的所有檔案，都套用同一種格式的話，那麼在每個 HTML 的頭部都要嵌入一整套 CSS 語法，那就不太方便了，萬一我們想要改變版面格式，不就每個 HTML 檔案都要更改，這顯然還不夠好用。</p>
+<p>要解決這個問題，可以將表頭的 CSS 獨立到一個檔案中，然後再用連結的方式引用，這樣只要修改那個 CSS 檔案，整個網站的風格就跟著改變，所以上述檔案就可以改寫如下。</p>
+<p>檔案：table_css.htm</p>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="dt">&lt;!DOCTYPE </span>html<span class="dt">&gt;</span>
+<span class="kw">&lt;html&gt;</span>
+<span class="kw">&lt;head&gt;</span>
+<span class="kw">&lt;meta</span><span class="ot"> charset=</span><span class="st">&#39;utf-8&#39;</span><span class="kw">&gt;</span>
+<span class="kw">&lt;link</span><span class="ot"> rel=</span><span class="st">&quot;stylesheet&quot;</span><span class="ot"> type=</span><span class="st">&quot;text/css&quot;</span><span class="ot"> href=</span><span class="st">&quot;mystyle.css&quot;</span><span class="kw">&gt;</span>
+<span class="kw">&lt;/head&gt;</span>
+<span class="kw">&lt;body&gt;</span>
+<span class="kw">&lt;table&gt;</span>
+<span class="kw">&lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;th&gt;</span>欄 1<span class="kw">&lt;/th&gt;&lt;th&gt;</span>欄 2<span class="kw">&lt;/th&gt;&lt;/tr&gt;</span>
+<span class="kw">&lt;tr&gt;&lt;th&gt;</span>列 1<span class="kw">&lt;/th&gt;&lt;td&gt;</span>1,1<span class="kw">&lt;/td&gt;&lt;td&gt;</span>1,2<span class="kw">&lt;/td&gt;&lt;/tr&gt;</span>
+<span class="kw">&lt;tr&gt;&lt;th&gt;</span>列 2<span class="kw">&lt;/th&gt;&lt;td&gt;</span>2,1<span class="kw">&lt;/td&gt;&lt;td&gt;</span>2,2<span class="kw">&lt;/td&gt;&lt;/tr&gt;</span>
+<span class="kw">&lt;/table&gt;</span>
+<span class="kw">&lt;/body&gt;</span>
+<span class="kw">&lt;/html&gt;</span></code></pre>
+<p>檔案：mystyle.css</p>
+<pre class="sourceCode css"><code class="sourceCode css">th <span class="kw">{</span> <span class="kw">background-color:</span><span class="dt">black</span><span class="kw">;</span> <span class="kw">color:</span><span class="dt">white</span><span class="kw">;</span> <span class="kw">}</span></code></pre>
+<p>透過這種方式，我們就可以為網頁設計統一的風格，也比較容易更換網頁的排版風格了，這就是 CSS 語法的用途了。</p>
+<p>當然、上述的網頁還不夠好看，如果我們將 mystyle.css 修改如下，您就會發現表格變得好看多了。</p>
+<pre class="sourceCode css"><code class="sourceCode css">table <span class="kw">{</span> <span class="kw">border-collapse:</span> <span class="dt">collapse</span><span class="kw">;</span> <span class="kw">border:</span> <span class="dt">1px</span> <span class="dt">solid</span> <span class="dt">#373737</span><span class="kw">;</span> <span class="kw">}</span>
+th <span class="kw">{</span> <span class="kw">background-color:</span><span class="dt">black</span><span class="kw">;</span> <span class="kw">color:</span><span class="dt">white</span><span class="kw">;</span> <span class="kw">padding:</span><span class="dt">10px</span><span class="kw">;</span> <span class="kw">margin:</span><span class="dt">10px</span><span class="kw">;</span> <span class="kw">}</span>
+td <span class="kw">{</span> <span class="kw">padding:</span><span class="dt">10px</span><span class="kw">;</span> <span class="kw">margin:</span><span class="dt">10px</span><span class="kw">;</span> <span class="kw">}</span></code></pre>
+<div class="figure">
+<img src="../img/table_css_ref.jpg" alt="較優美的表單顯示結果" /><p class="caption">較優美的表單顯示結果</p>
+</div>
+<h3 id="路徑-tag-id-與-class">路徑, tag, id 與 class</h3>
+<p>即使有了可以統一套用的方式，有時我們還是會感覺到不方便，舉例而言，如果我們想要對某個表格套上 A 格式，然後在對另一個表格套上 B 格式，這時採用上述方法就不太夠用了。</p>
+<p>為了解決這種問題，HTML 發展出了 id 與 class 這兩個屬性，我們可以根據 id 或 class 的名稱分別套用不同的 CSS 樣式。</p>
+<p>舉例而言，以下網頁中有兩個 div 框，我們可以分別為這兩個框套用不同的格式，其中 classA 前面加了點符號，成為「.classA」，代表要比對的是 class 屬性，如果想要比對的是 id 屬性，那麼就可以加上井字符號 # (像是範例中 #topbar 的情況)。</p>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;html&gt;</span>
+<span class="kw">&lt;head&gt;</span>
+<span class="kw">&lt;meta</span><span class="ot"> charset=</span><span class="st">&#39;utf-8&#39;</span><span class="kw">&gt;</span>
+<span class="kw">&lt;style&gt;</span>
+<span class="fl">#topbar</span> <span class="kw">{</span> <span class="kw">background-color:</span><span class="dt">gray</span><span class="kw">;</span> <span class="kw">color:</span><span class="dt">blue</span><span class="kw">;</span> <span class="kw">padding:</span><span class="dt">10px</span><span class="kw">;</span> <span class="kw">margin:</span><span class="dt">10px</span><span class="kw">;</span> <span class="kw">}</span>
+<span class="fl">.classA</span> <span class="kw">{</span> <span class="kw">background-color:</span><span class="dt">black</span><span class="kw">;</span> <span class="kw">color:</span><span class="dt">white</span><span class="kw">;</span> <span class="kw">padding:</span><span class="dt">10px</span><span class="kw">;</span> <span class="kw">margin:</span><span class="dt">10px</span><span class="kw">;</span> <span class="kw">}</span>
+<span class="fl">.classB</span> <span class="kw">{</span> <span class="kw">background-color:</span><span class="dt">blue</span><span class="kw">;</span> <span class="kw">color:</span><span class="dt">yellow</span><span class="kw">;</span> <span class="kw">padding:</span><span class="dt">10px</span><span class="kw">;</span> <span class="kw">margin:</span><span class="dt">10px</span><span class="kw">;</span> <span class="kw">}</span>
+<span class="kw">&lt;/style&gt;</span>
+<span class="kw">&lt;/head&gt;</span>
+<span class="kw">&lt;body&gt;</span>
+
+<span class="kw">&lt;div</span><span class="ot"> id=</span><span class="st">&quot;topbar&quot;</span><span class="kw">&gt;</span>頂區塊<span class="kw">&lt;/div&gt;</span>
+
+<span class="kw">&lt;div</span><span class="ot"> class=</span><span class="st">&quot;classA&quot;</span><span class="kw">&gt;</span>A 區塊<span class="kw">&lt;/div&gt;</span>
+
+<span class="kw">&lt;div</span><span class="ot"> class=</span><span class="st">&quot;classB&quot;</span><span class="kw">&gt;</span>B 區塊<span class="kw">&lt;/div&gt;</span>
+
+<span class="kw">&lt;/body&gt;</span>
+<span class="kw">&lt;/html&gt;</span></code></pre>
+<p>檢視檔案：<a href="https://dl.dropbox.com/u/101584453/web/wp/code/div_css.htm" class="uri">https://dl.dropbox.com/u/101584453/web/wp/code/div_css.htm</a></p>
+<div class="figure">
+<img src="../img/div_css.jpg" alt="兩種 CSS class 的顯示結果" /><p class="caption">兩種 CSS class 的顯示結果</p>
+</div>
+<p>到目前，我們可以看到有三種 css 的指定方式，也就是「標記 tag、代號 id 與類別 class」，可以用 CSS 來定位。事實上、這些指定方式還可以互相串接，以下是一些範例：</p>
+<pre class="sourceCode css"><code class="sourceCode css"><span class="fl">.classA</span> table <span class="kw">{</span> <span class="er">...</span> <span class="kw">}</span>               // 套用到 class=<span class="st">&quot;classA&quot;</span> 內部的 table 標記
+<span class="fl">#topbar</span> <span class="kw">{</span> <span class="er">....</span><span class="kw">}</span>                     // 套用到 id=<span class="st">&quot;topbar&quot;</span> 的元素上
+<span class="fl">#topbar</span> table <span class="fl">.classA</span> a <span class="kw">{</span> <span class="er">....</span> <span class="kw">}</span>    // 套用到 table 內具有 class=<span class="st">&quot;classA&quot;</span> 類別裏的超連結 a 標記上。</code></pre>
+<p>更棒的是、這些選取方式之間還可以共用，只要利用逗點符號「,」 分隔就可以了，以下是一些範例：</p>
+<pre class="sourceCode css"><code class="sourceCode css"><span class="fl">.classA</span>, <span class="fl">#topbar</span> <span class="kw">{</span> <span class="er">...</span> <span class="kw">}</span>            // 套用到 class=<span class="st">&quot;classA&quot;</span> 或 id=<span class="st">&quot;topbar&quot;</span> 的元素上
+<span class="fl">#topbar</span> a, <span class="fl">.classA</span> a <span class="kw">{</span> <span class="er">....</span><span class="kw">}</span>        // 套用到 id=<span class="st">&quot;topbar&quot;</span> 或 class=<span class="st">&quot;.classA&quot;</span> 裏的 a 元素上</code></pre>
+<h3 id="一個實用的-css-的範例">一個實用的 CSS 的範例</h3>
+<p>如果您想進一步學習 CSS 的各個屬性與用法，請參考下列網址，我們將不一一說明這些屬性的用法。</p>
+<ul>
+<li><a href="http://www.w3schools.com/css/default.asp" class="uri">http://www.w3schools.com/css/default.asp</a></li>
+</ul>
+<p>在此、筆者將自己常用的一個 CSS 檔案列出，讀者觀察後可以自行複製修改使用。</p>
+<pre class="sourceCode css"><code class="sourceCode css">html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video <span class="kw">{</span>
+  <span class="kw">margin:</span> <span class="dt">0</span><span class="kw">;</span>
+  <span class="kw">padding:</span> <span class="dt">0</span><span class="kw">;</span>
+  <span class="kw">border:</span> <span class="dt">0</span><span class="kw">;</span>
+  <span class="kw">font:</span> <span class="dt">inherit</span><span class="kw">;</span>
+  <span class="kw">vertical-align:</span> <span class="dt">baseline</span><span class="kw">;</span>
+  <span class="kw">line-height:</span><span class="dt">160%</span><span class="kw">;</span>
+<span class="kw">}</span>
+
+h1, h2, h3, h4, h5, h6 <span class="kw">{</span>
+  <span class="kw">color:</span><span class="dt">#333333</span><span class="kw">;</span>
+  <span class="kw">margin:</span> <span class="dt">0</span><span class="kw">;</span>
+  <span class="kw">font-family:</span> <span class="st">&#39;標楷體&#39;</span>, <span class="st">&#39;Times New Roman&#39;</span><span class="kw">;</span>
+  <span class="kw">font-weight:</span> <span class="dt">bold</span><span class="kw">;</span>
+<span class="kw">}</span>
+
+p <span class="kw">{</span>
+  <span class="kw">margin:</span> <span class="dt">10px</span> <span class="dt">0</span> <span class="dt">15px</span> <span class="dt">0</span><span class="kw">;</span>
+  <span class="kw">font-size:</span><span class="dt">100%</span><span class="kw">;</span>
+<span class="kw">}</span>
+
+li <span class="kw">{</span>
+  <span class="kw">font-size:</span><span class="dt">100%</span><span class="kw">;</span>
+<span class="kw">}</span>
+
+footer p <span class="kw">{</span>
+  <span class="kw">color:</span> <span class="dt">#f2f2f2</span><span class="kw">;</span>
+<span class="kw">}</span>
+
+a <span class="kw">{</span>
+  <span class="kw">text-decoration:</span> <span class="dt">none</span><span class="kw">;</span>
+  <span class="kw">color:</span> <span class="dt">#007edf</span><span class="kw">;</span>
+  <span class="kw">text-shadow:</span> <span class="dt">none</span><span class="kw">;</span>
+
+  <span class="kw">transition:</span> color <span class="dt">0.5s</span> ease<span class="kw">;</span>
+  <span class="kw">transition:</span> text-shadow <span class="dt">0.5s</span> ease<span class="kw">;</span>
+  <span class="kw">-webkit-transition:</span> color <span class="dt">0.5s</span> ease<span class="kw">;</span>
+  <span class="kw">-webkit-transition:</span> text-shadow <span class="dt">0.5s</span> ease<span class="kw">;</span>
+  <span class="kw">-moz-transition:</span> color <span class="dt">0.5s</span> ease<span class="kw">;</span>
+  <span class="kw">-moz-transition:</span> text-shadow <span class="dt">0.5s</span> ease<span class="kw">;</span>
+  <span class="kw">-o-transition:</span> color <span class="dt">0.5s</span> ease<span class="kw">;</span>
+  <span class="kw">-o-transition:</span> text-shadow <span class="dt">0.5s</span> ease<span class="kw">;</span>
+  <span class="kw">-ms-transition:</span> color <span class="dt">0.5s</span> ease<span class="kw">;</span>
+  <span class="kw">-ms-transition:</span> text-shadow <span class="dt">0.5s</span> ease<span class="kw">;</span>
+<span class="kw">}</span>
+
+table <span class="kw">{</span>
+  <span class="kw">border-collapse:</span> <span class="dt">collapse</span><span class="kw">;</span>
+  <span class="kw">border-spacing:</span> <span class="dt">0</span><span class="kw">;</span>
+  <span class="kw">border:</span> <span class="dt">1px</span> <span class="dt">solid</span> <span class="dt">#373737</span><span class="kw">;</span>
+  <span class="kw">margin-bottom:</span> <span class="dt">20px</span><span class="kw">;</span>
+  <span class="kw">text-align:</span> <span class="dt">left</span><span class="kw">;</span>
+  <span class="kw">margin-left:</span><span class="dt">auto</span><span class="kw">;</span> 
+  <span class="kw">margin-right:</span><span class="dt">auto</span><span class="kw">;</span>
+<span class="kw">}</span>
+
+th <span class="kw">{</span>
+    <span class="kw">padding:</span> <span class="dt">10px</span><span class="kw">;</span>
+    <span class="kw">background-color:</span><span class="dt">black</span><span class="kw">;</span>
+    <span class="kw">color:</span><span class="dt">white</span><span class="kw">;</span>
+<span class="kw">}</span>
+
+td <span class="kw">{</span>
+  <span class="kw">padding:</span> <span class="dt">10px</span><span class="kw">;</span>
+  <span class="kw">border:</span> <span class="dt">1px</span> <span class="dt">solid</span> <span class="dt">#373737</span><span class="kw">;</span>
+<span class="kw">}</span>
+ 
+em <span class="kw">{</span> <span class="kw">font-weight:</span><span class="dt">bold</span><span class="kw">;</span> <span class="kw">}</span>
+
+<span class="fl">#topbar</span> <span class="kw">{</span>
+  <span class="kw">margin:</span> <span class="dt">0</span><span class="kw">;</span>
+  <span class="kw">padding:</span> <span class="dt">1px</span><span class="kw">;</span>
+  <span class="kw">border:</span> <span class="dt">0</span><span class="kw">;</span>
+  <span class="kw">font:</span> <span class="dt">inherit</span><span class="kw">;</span>
+  <span class="kw">vertical-align:</span> <span class="dt">baseline</span><span class="kw">;</span>
+  <span class="kw">background-color:</span><span class="dt">black</span><span class="kw">;</span>
+  <span class="kw">color:</span><span class="dt">white</span><span class="kw">;</span>
+  <span class="kw">color:</span><span class="dt">white</span><span class="kw">;</span>
+  <span class="kw">width:</span><span class="dt">95%</span><span class="kw">;</span>
+  <span class="kw">text-align:</span><span class="dt">right</span><span class="kw">;</span>
+  <span class="kw">font-weight:</span><span class="dt">bold</span><span class="kw">;</span>
+<span class="kw">}</span>
+
+<span class="fl">#content</span> <span class="kw">{</span>
+  <span class="kw">margin:</span><span class="dt">10px</span><span class="kw">;</span>
+  <span class="kw">padding:</span><span class="dt">10px</span><span class="kw">;</span>
+<span class="kw">}</span>
+
+pre <span class="kw">{</span>
+  <span class="kw">border:</span> <span class="dt">1px</span> <span class="dt">solid</span> <span class="dt">#373737</span><span class="kw">;</span>
+  <span class="kw">background-color:</span><span class="dt">#dddddd</span><span class="kw">;</span>
+  <span class="kw">color:</span><span class="dt">#333333</span><span class="kw">;</span>
+  <span class="kw">font-size:</span><span class="dt">medium</span><span class="kw">;</span>
+  <span class="kw">width:</span><span class="dt">95%</span><span class="kw">;</span>
+  <span class="kw">padding:</span><span class="dt">10px</span><span class="kw">;</span>
+<span class="kw">}</span>
+
+img <span class="kw">{</span>
+  <span class="kw">border:</span> <span class="dt">1px</span> <span class="dt">solid</span> <span class="dt">#373737</span><span class="kw">;</span>
+  <span class="kw">margin-left:</span> <span class="dt">auto</span><span class="kw">;</span>
+  <span class="kw">margin-right:</span> <span class="dt">auto</span><span class="kw">;</span>
+  <span class="kw">display:</span> <span class="dt">block</span><span class="kw">;</span>
+<span class="kw">}</span>
+
+<span class="fl">.figure</span> <span class="fl">.caption</span> <span class="kw">{</span>
+  <span class="kw">text-align:</span><span class="dt">center</span><span class="kw">;</span>
+<span class="kw">}</span>
+
+<span class="fl">#footer</span> <span class="kw">{</span>
+  <span class="kw">text-align:</span><span class="dt">center</span><span class="kw">;</span>
+  <span class="kw">font-size:</span><span class="dt">small</span><span class="kw">;</span>
+  <span class="kw">color:</span><span class="dt">#666666</span><span class="kw">;</span>
+  <span class="kw">margin:</span> <span class="dt">10px</span><span class="kw">;</span>
+  <span class="kw">padding:</span> <span class="dt">10px</span><span class="kw">;</span>
+<span class="kw">}</span></code></pre>
+<h3 id="參考文獻-3">參考文獻</h3>
+<ul>
+<li><a href="http://www.w3schools.com/css/default.asp" class="uri">http://www.w3schools.com/css/default.asp</a></li>
+<li><a href="http://css.maxdesign.com.au/listutorial/" class="uri">http://css.maxdesign.com.au/listutorial/</a></li>
+</ul>
+<h2 id="javascript----讓網頁動起來">JavaScript -- 讓網頁動起來</h2>
+<p>JavaScript 之所以重要，是因為 JavaScript 是瀏覽器當中規定的標準語言。這是因為早期的瀏覽器 Netscape 將 JavaScript 內建於其中， 以變能夠進行一些互動程式的效果，因此才讓 JavaScript 成為瀏覽器的的標準語言。</p>
+<p>在瀏覽器中，要用 JavaScript 設計出互動效果，畢需借助 DOM (Document Object Model) 這個 HTML 的抽象化物件模型，這個模型將 整個 HTML 文件視為一個樹狀結構的物件，於是 JavaScript 可以透過操控物件屬性的方式，達成某些互動性的顯示效果。這種互動性的 顯示效果形成了瀏覽器特有的視覺化互動模式，可以說是近 15 年來 Web 的發展重點之所在。</p>
+<p>接著、就讓我們透過一些簡單的程式範例，看看如何用 JavaScript 操控 DOM 物件模型，以便完成這種互動效果。</p>
+<h3 id="用-javascript-操控網頁">用 JavaScript 操控網頁</h3>
+<h4 id="取得內容innertext-與-innerhtml">取得內容：innerText 與 innerHTML</h4>
+<p>以下範例會取得 hi 節點的 innerText 與 innerHTML 顯示出來，請觀察其不同點。</p>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;html&gt;</span>
+  <span class="kw">&lt;head&gt;</span>
+    <span class="kw">&lt;title&gt;</span>節點存取示範<span class="kw">&lt;/title&gt;</span>
+  <span class="kw">&lt;/head&gt;</span>
+  <span class="kw">&lt;body&gt;</span>
+    <span class="kw">&lt;div</span><span class="ot"> id</span> <span class="ot">=</span><span class="st">&quot;hi&quot;</span><span class="kw">&gt;&lt;b&gt;</span>你好!<span class="kw">&lt;/b&gt;&lt;/div&gt;</span>
+    <span class="kw">&lt;input</span><span class="ot"> type=</span><span class="st">&quot;button&quot;</span><span class="ot"> value=</span><span class="st">&quot;hi.innerText&quot;</span> 
+<span class="ot">             onclick=</span><span class="st">&quot;alert(document.getElementById(&#39;hi&#39;).innerText)&quot;</span><span class="er">);</span>
+    <span class="er">&lt;input</span><span class="ot"> type=</span><span class="st">&quot;button&quot;</span><span class="ot"> value=</span><span class="st">&quot;hi.innerHTML&quot;</span> 
+<span class="ot">             onclick=</span><span class="st">&quot;alert(document.getElementById(&#39;hi&#39;).innerHTML)&quot;</span><span class="er">);</span>
+  <span class="er">&lt;/body</span><span class="kw">&gt;</span>
+<span class="kw">&lt;/html&gt;</span></code></pre>
+<h4 id="顯示與隱藏-show-and-hide">顯示與隱藏 (Show and hide)</h4>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;html&gt;</span>
+  <span class="kw">&lt;head&gt;</span>
+    <span class="kw">&lt;title&gt;</span>範例 -- 顯示隱藏<span class="kw">&lt;/title&gt;</span>
+  <span class="kw">&lt;/head&gt;</span>
+  <span class="kw">&lt;body&gt;</span>
+    <span class="kw">&lt;div</span><span class="ot"> id</span> <span class="ot">=</span><span class="st">&quot;hi&quot;</span><span class="kw">&gt;&lt;b&gt;</span>你好!<span class="kw">&lt;/b&gt;&lt;/div&gt;</span>
+    <span class="kw">&lt;input</span><span class="ot"> type=</span><span class="st">&quot;button&quot;</span><span class="ot"> value=</span><span class="st">&quot;hi.show()&quot;</span><span class="ot"> onclick=</span><span class="st">&quot;document.getElementById(&#39;hi&#39;).style.visibility=&#39;visible&#39;&quot;</span><span class="er">);</span>
+    <span class="er">&lt;input</span><span class="ot"> type=</span><span class="st">&quot;button&quot;</span><span class="ot"> value=</span><span class="st">&quot;hi.hide()&quot;</span><span class="ot"> onclick=</span><span class="st">&quot;document.getElementById(&#39;hi&#39;).style.visibility=&#39;hidden&#39;&quot;</span><span class="er">);</span>
+  <span class="er">&lt;/body</span><span class="kw">&gt;</span>
+<span class="kw">&lt;/html&gt;</span></code></pre>
+<h3 id="功能表程式">功能表程式</h3>
+<p>JavaScript 是唯一被各家瀏覽器所共同支援的程式語言，因此在設計網站的時候，我們如果不採用像 Flash 或 Silverlight 這樣的外掛技術，就必須採用 JavaScript 來設計互動式網頁。</p>
+<p>在 node.js 這樣的伺服端 JavaScript 開發平台推出之後，我們就能夠採用 JavaScript 同時設計 Client 端與 Server 端的程式，這樣的模式相當的吸引人，我們會在後續的文章中介紹這樣的網站設計方法。</p>
+<p>在本節當中，我們將透過 JavaScript 設計一個互動網頁的功能表，以便展示瀏覽器中的 JavaScript 程式是如何運作的。</p>
+<p>以下是一個功能表的程式的執行結果，當我們的滑鼠移到功能項上時，就會浮現子功能表，而當我們點下子功能表中的項目時，就會出現一個 alert 視窗，顯示該功能子項被點選的訊息。</p>
+<div class="figure">
+<img src="../img/JavaScriptMenuRun.jpg" alt="功能表程式的執行畫面" /><p class="caption">功能表程式的執行畫面</p>
+</div>
+<p>以下是這個網頁的原始 HTML 程式碼，其中 <code>&lt;style&gt;...&lt;/style&gt;</code> 部分是 CSS 原始碼，而 <code>&lt;script ...&lt;/script&gt;</code> 部分則是 JavaScript 程式碼。</p>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;html&gt;</span>
+<span class="kw">&lt;head&gt;</span>
+<span class="kw">&lt;title&gt;</span>範例 -- 功能表實作<span class="kw">&lt;/title&gt;</span>
+<span class="kw">&lt;style&gt;</span>
+<span class="fl">.menu</span>   <span class="kw">{</span> <span class="kw">background-color:</span><span class="dt">black</span><span class="kw">;</span> <span class="kw">color:</span><span class="dt">white</span><span class="kw">;</span> <span class="kw">padding:</span><span class="dt">10px</span><span class="kw">;</span> 
+          <span class="kw">vertical-align:</span><span class="dt">top</span><span class="kw">;</span> <span class="kw">width:</span><span class="dt">100px</span><span class="kw">;</span> <span class="kw">list-style-type:</span><span class="dt">none</span><span class="kw">;</span> <span class="kw">}</span>
+<span class="fl">.menu</span> a <span class="kw">{</span> <span class="kw">color:</span><span class="dt">white</span><span class="kw">;</span> <span class="kw">text-decoration:</span><span class="dt">none</span><span class="kw">;</span> <span class="kw">}</span>
+<span class="kw">&lt;/style&gt;</span>
+<span class="kw">&lt;script</span><span class="ot"> type=</span><span class="st">&quot;text/javascript&quot;</span><span class="kw">&gt;</span>
+<span class="kw">function</span> <span class="fu">show</span>(id) {
+  <span class="ot">document</span>.<span class="fu">getElementById</span>(id).<span class="ot">style</span>.<span class="fu">visibility</span>=<span class="st">&#39;visible&#39;</span>;
+}
+ 
+<span class="kw">function</span> <span class="fu">hide</span>(id) {
+  <span class="ot">document</span>.<span class="fu">getElementById</span>(id).<span class="ot">style</span>.<span class="fu">visibility</span>=<span class="st">&#39;hidden&#39;</span>;
+}
+&lt;<span class="ot">/script&gt;    </span>
+<span class="ot">  &lt;/head</span>&gt;
+  &lt;body onload=<span class="st">&quot;JavaScript:hide(&#39;popup1&#39;);hide(&#39;popup2&#39;);&quot;</span>&gt;
+      &lt;ul onmouseover=<span class="st">&quot;show(&#39;popup1&#39;);&quot;</span>  onmouseout=<span class="st">&quot;hide(&#39;popup1&#39;)&quot;</span> 
+          style=<span class="st">&quot;position:absolute; left:100px; top:20px&quot;</span>&gt;
+        &lt;li id=<span class="st">&quot;menu1&quot;</span> <span class="kw">class</span>=<span class="st">&quot;menu&quot;</span>&gt;menu1&lt;<span class="ot">/li&gt;</span>
+<span class="ot">        &lt;ul id=&quot;popup1&quot; class=&quot;menu&quot;&gt;</span>
+<span class="ot">          &lt;li&gt;&lt;a href=&quot;JavaScript:alert</span><span class="fl">(</span><span class="ot">&#39;1.1&#39;</span><span class="fl">)</span><span class="ot">;&quot;&gt;menu 1.1&lt;/a</span>&gt;&lt;<span class="ot">/li&gt;</span>
+<span class="ot">          &lt;li&gt;&lt;a href=&quot;JavaScript:alert</span><span class="fl">(</span><span class="ot">&#39;1.2&#39;</span><span class="fl">)</span><span class="ot">;&quot;&gt;menu 1.2&lt;/a</span>&gt;&lt;<span class="ot">/li&gt;</span>
+<span class="ot">        &lt;/ul</span>&gt; 
+      &lt;<span class="ot">/ul&gt;</span>
+<span class="ot">      &lt;ul onmouseover=&quot;show</span><span class="fl">(</span><span class="ot">&#39;popup2&#39;</span><span class="fl">)</span><span class="ot">;&quot; onmouseout=&quot;hide</span><span class="fl">(</span><span class="ot">&#39;popup2&#39;</span><span class="fl">)</span><span class="ot">&quot; </span>
+<span class="ot">          style=&quot;position:absolute; left:220px; top:20px&quot;&gt;</span>
+<span class="ot">        &lt;li id=&quot;menu2&quot; class=&quot;menu&quot;&gt;menu2&lt;/li</span>&gt;
+        &lt;ul id=<span class="st">&quot;popup2&quot;</span> <span class="kw">class</span>=<span class="st">&quot;menu&quot;</span>&gt;
+          &lt;li&gt;&lt;a href=<span class="st">&quot;JavaScript:alert(&#39;2.1&#39;);&quot;</span>&gt;menu <span class="fl">2.1</span>&lt;<span class="ot">/a&gt;&lt;/li</span>&gt;
+          &lt;li&gt;&lt;a href=<span class="st">&quot;JavaScript:alert(&#39;2.2&#39;);&quot;</span>&gt;menu <span class="fl">2.2</span>&lt;<span class="ot">/a&gt;&lt;/li</span>&gt;
+          &lt;li&gt;&lt;a href=<span class="st">&quot;JavaScript:alert(&#39;2.3&#39;);&quot;</span>&gt;menu <span class="fl">2.3</span>&lt;<span class="ot">/a&gt;&lt;/li</span>&gt;
+        &lt;<span class="ot">/ul&gt;</span>
+<span class="ot">      &lt;/ul</span>&gt;
+  &lt;<span class="ot">/body&gt;</span>
+<span class="ot">&lt;/html</span>&gt;</code></pre>
+<p>雖然以上程式只是一個小小的功能表程式碼，但是要能夠讀懂，而且寫得出來，卻要懂相當多的技術才行，這些技術包含 HTML, CSS , JavaScript 與 Document Object Model (DOM)。</p>
+<h4 id="程式解析">程式解析</h4>
+<p>在 HTML 的一開始，我們用以下語法描述了功能表所需要的 CSS 樣式，當我們套用在像 <code>&lt;li id=&quot;menu2&quot; class=&quot;menu&quot;&gt;menu2&lt;/li&gt;</code> 這樣的 HTML 項目上時，就會呈現比較好看的功能表排版格式，而這正是 CSS 樣式的功用。</p>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;style&gt;</span>
+<span class="fl">.menu</span>   <span class="kw">{</span> <span class="kw">background-color:</span><span class="dt">black</span><span class="kw">;</span> <span class="kw">color:</span><span class="dt">white</span><span class="kw">;</span> <span class="kw">padding:</span><span class="dt">10px</span><span class="kw">;</span> 
+          <span class="kw">vertical-align:</span><span class="dt">top</span><span class="kw">;</span> <span class="kw">width:</span><span class="dt">100px</span><span class="kw">;</span> <span class="kw">list-style-type:</span><span class="dt">none</span><span class="kw">;</span> <span class="kw">}</span>
+<span class="fl">.menu</span> a <span class="kw">{</span> <span class="kw">color:</span><span class="dt">white</span><span class="kw">;</span> <span class="kw">text-decoration:</span><span class="dt">none</span><span class="kw">;</span> <span class="kw">}</span>
+<span class="kw">&lt;/style&gt;</span></code></pre>
+<p>以上的 CSS 語法中，要求功能表要以黑底白字的方式 (<code>background-color:black; color:white;</code>) 顯示，邊緣補上 10 點的空白(<code>padding:10px;</code>)，而且是以向上靠攏 (<code>vertical-align:top;</code>) 的方式，每個功能表的寬度都是 100 點 (<code>width:100px;</code>)，然後不要顯示項目前面的點符號 (<code>list-style-type:none;</code>)。</p>
+<p>接著是一段 JavaScript 程式碼的語法，定義了 show(id) 與 hide(id) 這兩個函數，我們可以用這兩個函數在適當的時候讓功能表顯示出來或者是隱藏掉，這樣才能做到「浮現」的功能。</p>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;script</span><span class="ot"> type=</span><span class="st">&quot;text/javascript&quot;</span><span class="kw">&gt;</span>
+<span class="kw">function</span> <span class="fu">show</span>(id) {
+  <span class="ot">document</span>.<span class="fu">getElementById</span>(id).<span class="ot">style</span>.<span class="fu">visibility</span>=<span class="st">&#39;visible&#39;</span>;
+}
+ 
+<span class="kw">function</span> <span class="fu">hide</span>(id) {
+  <span class="ot">document</span>.<span class="fu">getElementById</span>(id).<span class="ot">style</span>.<span class="fu">visibility</span>=<span class="st">&#39;hidden&#39;</span>;
+}
+&lt;<span class="ot">/script&gt;    </span></code></pre>
+<p>然後，開始進入 HTML 的 body 區塊，其中定義了兩組功能表，第一組的內容如下：</p>
+<pre class="sourceCode html"><code class="sourceCode html">      <span class="kw">&lt;ul</span><span class="ot"> onmouseover=</span><span class="st">&quot;show(&#39;popup1&#39;);&quot;</span><span class="ot">  onmouseout=</span><span class="st">&quot;hide(&#39;popup1&#39;)&quot;</span> 
+<span class="ot">          style=</span><span class="st">&quot;position:absolute; left:100px; top:20px&quot;</span><span class="kw">&gt;</span>
+        <span class="kw">&lt;li</span><span class="ot"> id=</span><span class="st">&quot;menu1&quot;</span><span class="ot"> class=</span><span class="st">&quot;menu&quot;</span><span class="kw">&gt;</span>menu1<span class="kw">&lt;/li&gt;</span>
+        <span class="kw">&lt;ul</span><span class="ot"> id=</span><span class="st">&quot;popup1&quot;</span><span class="ot"> class=</span><span class="st">&quot;menu&quot;</span><span class="kw">&gt;</span>
+          <span class="kw">&lt;li&gt;&lt;a</span><span class="ot"> href=</span><span class="st">&quot;JavaScript:alert(&#39;1.1&#39;);&quot;</span><span class="kw">&gt;</span>menu 1.1<span class="kw">&lt;/a&gt;&lt;/li&gt;</span>
+          <span class="kw">&lt;li&gt;&lt;a</span><span class="ot"> href=</span><span class="st">&quot;JavaScript:alert(&#39;1.2&#39;);&quot;</span><span class="kw">&gt;</span>menu 1.2<span class="kw">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="kw">&lt;/ul&gt;</span> 
+      <span class="kw">&lt;/ul&gt;</span></code></pre>
+<p>上述區塊最外層的 <code>&lt;ul&gt;...&lt;/ul&gt;</code> 定義了整個功能表的結構，是由功能母項 <code>&lt;li id=&quot;menu1&quot; class=&quot;menu&quot;&gt;menu1&lt;/li&gt;</code> 與子功能表 <code>&lt;ul id=&quot;popup1&quot; class=&quot;menu&quot;&gt;...&lt;/ul&gt;</code> 所組合而成的，而 <code>&lt;ul onmouseover=&quot;show('popup1');&quot;  onmouseout=&quot;hide('popup1')&quot; style=&quot;position:absolute; left:100px; top:20px&quot;&gt;</code> 這一段除了定義了該功能表要顯示在絕對位置 (100,20) 的地方之外，還定義了 onmouseover 與 onmouseout 的事件，這兩個事件讓功能表可以在滑鼠移入時顯示出來，然後在滑鼠移出時隱藏起來，因而做到了浮現式功能表所要求的條件。</p>
+<p>由於我們在 <code>&lt;li&gt;...&lt;/li&gt;</code> 內的超連結 <code>&lt;a href=&quot;JavaScript:alert('2.1');&quot;&gt;menu 2.1&lt;/a&gt;</code> 使用了 JavaScript 語法，因此在該超連結被點選時，就會有警告視窗顯示 2.1 的訊息，這個訊息僅僅是讓我們知道該功能項被點選了而已，沒有真實的功能。</p>
+<p>同樣的、第二個功能表的程式碼也是非常類似的，請讀者看看是否能夠讀者其內容。</p>
+<pre class="sourceCode html"><code class="sourceCode html">      <span class="kw">&lt;ul</span><span class="ot"> onmouseover=</span><span class="st">&quot;show(&#39;popup2&#39;);&quot;</span><span class="ot"> onmouseout=</span><span class="st">&quot;hide(&#39;popup2&#39;)&quot;</span> 
+<span class="ot">          style=</span><span class="st">&quot;position:absolute; left:220px; top:20px&quot;</span><span class="kw">&gt;</span>
+        <span class="kw">&lt;li</span><span class="ot"> id=</span><span class="st">&quot;menu2&quot;</span><span class="ot"> class=</span><span class="st">&quot;menu&quot;</span><span class="kw">&gt;</span>menu2<span class="kw">&lt;/li&gt;</span>
+        <span class="kw">&lt;ul</span><span class="ot"> id=</span><span class="st">&quot;popup2&quot;</span><span class="ot"> class=</span><span class="st">&quot;menu&quot;</span><span class="kw">&gt;</span>
+          <span class="kw">&lt;li&gt;&lt;a</span><span class="ot"> href=</span><span class="st">&quot;JavaScript:alert(&#39;2.1&#39;);&quot;</span><span class="kw">&gt;</span>menu 2.1<span class="kw">&lt;/a&gt;&lt;/li&gt;</span>
+          <span class="kw">&lt;li&gt;&lt;a</span><span class="ot"> href=</span><span class="st">&quot;JavaScript:alert(&#39;2.2&#39;);&quot;</span><span class="kw">&gt;</span>menu 2.2<span class="kw">&lt;/a&gt;&lt;/li&gt;</span>
+          <span class="kw">&lt;li&gt;&lt;a</span><span class="ot"> href=</span><span class="st">&quot;JavaScript:alert(&#39;2.3&#39;);&quot;</span><span class="kw">&gt;</span>menu 2.3<span class="kw">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="kw">&lt;/ul&gt;</span>
+      <span class="kw">&lt;/ul&gt;</span></code></pre>
+<p>看到這裡，讀者應該大致理解了上述功能表網頁的運作原理，但事實上、我們還漏掉了一行重要的程式碼，那就是 <code>&lt;body onload=&quot;JavaScript:hide('popup1');hide('popup2');&quot;&gt;</code> 這一行，這一行讓浮現功能表能在一開始就處於隱藏狀態，才不會一進來就看到兩個功能表都浮現出來的錯誤情況。</p>
+<h4 id="小結">小結</h4>
+<p>從上述範例中，您可以看到瀏覽器中的 JavaScript ，通常是透過調整網頁某些項目的 CSS 屬性，以達成互動性的功能，這種互動網頁技術，事實上是結合了 HTML+CSS+JavaScript 等技術才能達成的功能，因此這三項技術在瀏覽器當中幾乎是合為一體、可以說是缺一不可的。</p>
+<p>在本期中我們說明了互動式網頁的設計方式，但這樣的設計方式非常冗長，對程式人員而言是很大的負擔，因此在互動網頁興起之後，就逐漸出現了各式各樣的互動性 JavaScript 框架，也就是現成的 JavaScript 函式庫，讓我們可以輕易做出很好的互動性，像是 jQuery, ExtJS, YUI, Prototype, Dojo 等互動性函式庫，以便減輕 JavaScript 程式人員的負擔，增加程式員的生產力，在下一期當中，我們將使用最常被使用的 jQuery 框架，再度說明互動網頁的寫法，我們下期見！</p>
+<h3 id="html-編輯器">HTML 編輯器</h3>
+<p>在本節當中，我們將透過 JavaScript 設計一個 HTML 編輯器，讓您可以直接在瀏覽器當中看到 HTML 網頁的呈現結果， 筆者認為這個範例對學習動態網頁設計是一個非常簡單、卻又很有啟發性的程式。因為他很明顯的展現了動態網頁的原理。</p>
+<p>以下是該 HTML 編輯器的執行結果，當我們在 CSS 與 HTML 區塊輸入對應的原始碼之後，就可以按下「→」按鈕，然後在 呈現的 <code>&lt;div id=&quot;showbox&quot; ...&lt;/div&gt;</code> 區塊看到兩者搭配時的呈現結果。</p>
+<div class="figure">
+<img src="../img/HtmlEditorRun.jpg" alt="HTML 編輯器的執行畫面" /><p class="caption">HTML 編輯器的執行畫面</p>
+</div>
+<p>您也可以點選下列連結以實際檢視該網頁：</p>
+<ul>
+<li>HTML 編輯器：<a href="https://dl.dropboxusercontent.com/u/101584453/pmag/201305/code/HtmlEditor.htm" class="uri">https://dl.dropboxusercontent.com/u/101584453/pmag/201305/code/HtmlEditor.htm</a></li>
+</ul>
+<p>以下是這個網頁的原始 HTML 程式碼，其中有兩大段是我們預設填入的 CSS 與 HTML 原始碼，這兩段原則上可以去掉，但是 為了測試方便起見，我們就留在檔案中，請讀者閱讀的時候仔細區分之。</p>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;html&gt;</span>
+<span class="kw">&lt;style&gt;</span>
+textarea, <span class="fl">#showbox</span> <span class="kw">{</span> <span class="kw">border:</span> <span class="dt">1px</span> <span class="dt">solid</span> <span class="dt">#9f9f9f</span><span class="kw">;</span> <span class="kw">}</span>
+<span class="kw">&lt;/style&gt;</span>
+<span class="kw">&lt;style</span><span class="ot"> id=</span><span class="st">&quot;showboxstyle&quot;</span><span class="kw">&gt;</span>
+<span class="kw">&lt;/style&gt;</span>
+<span class="kw">&lt;script</span><span class="ot"> type=</span><span class="st">&quot;text/javascript&quot;</span><span class="kw">&gt;</span>
+<span class="kw">function</span> <span class="fu">convert</span>() {
+  <span class="kw">var</span> cssbox  = <span class="ot">document</span>.<span class="fu">getElementById</span>(<span class="st">&quot;cssbox&quot;</span>);
+  <span class="kw">var</span> editbox = <span class="ot">document</span>.<span class="fu">getElementById</span>(<span class="st">&quot;editbox&quot;</span>);
+  <span class="kw">var</span> showbox = <span class="ot">document</span>.<span class="fu">getElementById</span>(<span class="st">&quot;showbox&quot;</span>);
+  <span class="kw">var</span> showboxstyle = <span class="ot">document</span>.<span class="fu">getElementById</span>(<span class="st">&quot;showboxstyle&quot;</span>);
+  <span class="ot">showbox</span>.<span class="fu">innerHTML</span> = <span class="ot">editbox</span>.<span class="fu">value</span>;
+  <span class="ot">showboxstyle</span>.<span class="fu">innerHTML</span> = <span class="ot">cssbox</span>.<span class="fu">value</span>;
+}
+&lt;<span class="ot">/script&gt;   </span>
+<span class="ot">&lt;body&gt;</span>
+<span class="ot">&lt;form&gt;</span>
+<span class="ot">&lt;table width=&quot;95%&quot; style=&quot;border-collapse: collapse; border: 0px;&quot;&gt;&lt;tr&gt;</span>
+<span class="ot">&lt;tr&gt;&lt;td colspan=&quot;2&quot; style=&quot;text-align:center&quot;&gt;HTML 原始碼　　&lt;input type=&quot;button&quot; value=&quot; → &quot; onclick=&quot;JavaScript:convert</span><span class="fl">()</span><span class="ot">&quot;/</span>&gt;　　　顯示結果&lt;<span class="ot">/td&gt;&lt;/tr</span>&gt;
+&lt;td width=<span class="st">&quot;50%&quot;</span>&gt;
+&lt;textarea id=<span class="st">&quot;cssbox&quot;</span> style=<span class="st">&quot;width:100%; height:100px;&quot;</span> &gt;
+&lt;!-- 預設貼入的CSS：開始 --&gt;
+td, th { <span class="dt">padding</span>:10px; }
+th { background-<span class="dt">color</span>:black; <span class="dt">color</span>:white; }
+table { border-<span class="dt">collapse</span>: collapse; <span class="dt">border</span>: 1px solid #<span class="dv">373737</span>; }
+&lt;!---預設貼入的CSS：結束 --&gt;
+&lt;<span class="ot">/textarea&gt;</span>
+<span class="ot">&lt;textarea id=&quot;editbox&quot; style=&quot;width:100%; height:400px;&quot;&gt;</span>
+<span class="ot">&lt;!-- 預設貼入的HTML：開始 --&gt;</span>
+<span class="ot">Hello! &lt;a href=&quot;http://tw.yahoo.com&quot;&gt;Yahoo&lt;/a</span>&gt;&lt;br/&gt;&lt;<span class="ot">/br&gt;</span>
+<span class="ot">&lt;table&gt;</span>
+<span class="ot">&lt;tr&gt;&lt;th&gt;&lt;/th</span>&gt;&lt;th&gt;欄 <span class="dv">1</span>&lt;<span class="ot">/th&gt;&lt;th&gt;欄 2&lt;/th</span>&gt;&lt;<span class="ot">/tr&gt;</span>
+<span class="ot">&lt;tr&gt;&lt;th&gt;列 1&lt;/th</span>&gt;&lt;td&gt;<span class="dv">1</span>,<span class="dv">1</span>&lt;<span class="ot">/td&gt;&lt;td&gt;1,2&lt;/td</span>&gt;&lt;<span class="ot">/tr&gt;</span>
+<span class="ot">&lt;tr&gt;&lt;th&gt;列 2&lt;/th</span>&gt;&lt;td&gt;<span class="dv">2</span>,<span class="dv">1</span>&lt;<span class="ot">/td&gt;&lt;td&gt;2,2&lt;/td</span>&gt;&lt;<span class="ot">/tr&gt;</span>
+<span class="ot">&lt;/table</span>&gt;&lt;br/&gt;
+&lt;form action=<span class="st">&quot;signup&quot;</span> method=<span class="st">&quot;post&quot;</span>&gt;
+帳號: &lt;input type=<span class="st">&quot;text&quot;</span> name=<span class="st">&quot;user&quot;</span><span class="ot">/&gt;&lt;br/</span>&gt;
+密碼: &lt;input type=<span class="st">&quot;password&quot;</span> name=<span class="st">&quot;password&quot;</span><span class="ot">/&gt;&lt;br/</span>&gt;
+信箱: &lt;input type=<span class="st">&quot;email&quot;</span> name=<span class="st">&quot;email&quot;</span><span class="ot">/&gt;&lt;br/</span>&gt;
+生日: &lt;input type=<span class="st">&quot;date&quot;</span> name=<span class="st">&quot;birthday&quot;</span><span class="ot">/&gt;&lt;br/</span>&gt;
+照片: &lt;input type=<span class="st">&quot;file&quot;</span> name=<span class="st">&quot;picture&quot;</span><span class="ot">/&gt;&lt;br/</span>&gt;
+性別: &lt;input type=<span class="st">&quot;radio&quot;</span> name=<span class="st">&quot;sex&quot;</span> value=<span class="st">&quot;male&quot;</span> checked/&gt; 男
+      &lt;input type=<span class="st">&quot;radio&quot;</span> name=<span class="st">&quot;sex&quot;</span> value=<span class="st">&quot;female&quot;</span><span class="ot">/&gt; 女&lt;br/</span>&gt;
+血型: &lt;select name=<span class="st">&quot;BloodType&quot;</span>&gt;
+        &lt;option value=<span class="st">&quot;A&quot;</span>&gt;A 型&lt;<span class="ot">/option&gt;</span>
+<span class="ot">        &lt;option value=&quot;B&quot;&gt;B 型&lt;/option</span>&gt;
+        &lt;option value=<span class="st">&quot;AB&quot;</span>&gt;AB 型&lt;<span class="ot">/option&gt;</span>
+<span class="ot">        &lt;option value=&quot;O&quot;&gt;O 型&lt;/option</span>&gt;
+      &lt;<span class="ot">/select&gt; &lt;br/</span>&gt;
+自我介紹： &lt;br/&gt;
+&lt;input type=<span class="st">&quot;submit&quot;</span> value=<span class="st">&quot;送出&quot;</span><span class="ot">/&gt;&lt;input type=&quot;reset&quot; value=&quot;清除&quot;/</span>&gt;&lt;br/&gt;
+&lt;<span class="ot">/form&gt;</span>
+<span class="ot">&lt;!-- 預設貼入的HTML：結束 --&gt;</span>
+<span class="ot">&lt;/textarea</span>&gt; 
+&lt;<span class="ot">/td&gt;</span>
+<span class="ot">&lt;td&gt;</span>
+<span class="ot">&lt;div id=&quot;showbox&quot; style=&quot;width:100%; height:500px;&quot;&gt;</span>
+<span class="ot">&lt;/div</span>&gt;
+&lt;<span class="ot">/td&gt;</span>
+<span class="ot">&lt;/tr</span>&gt;&lt;<span class="ot">/table&gt;</span>
+<span class="ot">&lt;/form</span>&gt;
+&lt;<span class="ot">/body&gt;</span>
+<span class="ot">&lt;/html</span>&gt;</code></pre>
+<h4 id="程式解析-1">程式解析</h4>
+<p>上述程式當中有三個主要的區塊，分別是：</p>
+<ol style="list-style-type: decimal">
+<li>CSS 填入區塊： <code>&lt;textarea id=&quot;cssbox&quot; ...&lt;/textarea&gt;</code></li>
+<li>HTML 填入區塊：<code>&lt;textarea id=&quot;editbox&quot; ...&lt;/textarea&gt;</code></li>
+<li>HTML 顯示區塊：<code>&lt;div id=&quot;showbox&quot; ... &lt;/div&gt;</code></li>
+</ol>
+<p>此網頁的核心程式部分真的很簡單，只有如下短短的一小段：</p>
+<ol style="list-style-type: decimal">
+<li>利用 <code>var editbox = document.getElementById(&quot;editbox&quot;);</code> 取得 HTML 區塊內容</li>
+<li>利用 <code>showbox.innerHTML = editbox.value;</code> 這個指令將該 HTML 原始碼填入 showbox 當中</li>
+</ol>
+<p>這樣就完成顯示 HTML 的動作了。</p>
+<pre class="sourceCode javascript"><code class="sourceCode javascript"><span class="kw">function</span> <span class="fu">convert</span>() {
+  <span class="kw">var</span> cssbox  = <span class="ot">document</span>.<span class="fu">getElementById</span>(<span class="st">&quot;cssbox&quot;</span>);
+  <span class="kw">var</span> editbox = <span class="ot">document</span>.<span class="fu">getElementById</span>(<span class="st">&quot;editbox&quot;</span>);
+  <span class="kw">var</span> showbox = <span class="ot">document</span>.<span class="fu">getElementById</span>(<span class="st">&quot;showbox&quot;</span>);
+  <span class="kw">var</span> showboxstyle = <span class="ot">document</span>.<span class="fu">getElementById</span>(<span class="st">&quot;showboxstyle&quot;</span>);
+  <span class="ot">showbox</span>.<span class="fu">innerHTML</span> = <span class="ot">editbox</span>.<span class="fu">value</span>;
+  <span class="ot">showboxstyle</span>.<span class="fu">innerHTML</span> = <span class="ot">cssbox</span>.<span class="fu">value</span>;
+}</code></pre>
+<p>但是這樣作並沒有加入 cssbox 的內容到 HTML 當中，因此我們加入了下列原始碼：</p>
+<ol style="list-style-type: decimal">
+<li>在整個網頁的頭部事先用 <code>&lt;style id=&quot;showboxstyle&quot;&gt;...&lt;/style&gt;</code> 這個標記加入一個 CSS style 顯示區塊</li>
+<li>利用 <code>showboxstyle.innerHTML = cssbox.value</code> 這個指令將 cssbox 的內容填入到該表頭的 style 區塊中</li>
+</ol>
+<p>這樣就達成了套用 CSS 內容到網頁中的目的，完成了整個 HTML 編輯器的功能。</p>
+<h4 id="小結-1">小結</h4>
+<p>在本節中，我們用非常簡單的程式，建構了一個 HTML 編輯器。事實上我們只不過是把網頁內容從編輯區域移動到顯示區域，然後流覽器就會 自動解釋這些內容進行呈現了。</p>
+<h3 id="參考文獻-4">參考文獻</h3>
+<ul>
+<li><a href="http://stackoverflow.com/questions/1720320/how-to-dynamically-create-css-class-in-javascript-and-apply" class="uri">http://stackoverflow.com/questions/1720320/how-to-dynamically-create-css-class-in-javascript-and-apply</a></li>
+<li><a href="http://dev.opera.com/articles/view/dynamic-style-css-javascript/" class="uri">http://dev.opera.com/articles/view/dynamic-style-css-javascript/</a></li>
+</ul>
+<h1 id="科技人小故事">科技人小故事</h1>
+<h2 id="與大師相遇-tim-burner-lee">與大師相遇 : Tim Burner Lee</h2>
+<div class="figure">
+<img src="../img/Tim_Berners-Lee_2012.jpg" alt="圖、Tim Berners-Lee 2012 年的照片來源：http://en.wikipedia.org/wiki/Tim_Berners-Lee#mediaviewer/File:Tim_Berners-Lee_2012.jpg" /><p class="caption">圖、Tim Berners-Lee 2012 年的照片<br/>來源：http://en.wikipedia.org/wiki/Tim_Berners-Lee#mediaviewer/File:Tim_Berners-Lee_2012.jpg</p>
+</div>
+<p>Tim Burner Lee 被尊稱為 Web 之父可以說是實至名歸，因為他發展出了 HTTP+HTML+URL 等技術，並創建了全世界第一個伺服器與陽春版的瀏覽器，雖然後來 MOSAIC 在瀏覽器上做得更好，但整個技術的架構確實是由 Tim Burner Lee 所奠定的基礎。</p>
+<p>1980年6月-9月間，柏納-李在CERN（歐洲核子研究組織）擔任獨立承辦人時，他提出了建立一個以超文字系統為基礎的專案，以方便研究人員分享及更新訊息，同時他建立了一個原型系統，叫 ENQUIRE。</p>
+<p>1980年，Tim Burner Lee 離開 CERN 轉而任職於約翰·普爾圖形電腦系統有限公司，該公司位於英格蘭伯恩茅斯。在這間公司里，他參與的計劃是一個遠端程序呼叫，從而獲得了電腦網路經驗，1984年，Tim Burner Lee 以正式員工的身份重返 CERN。</p>
+<p>在1989年的時候， CERN 是全歐最大的網際網路節點，並因此看到了將超文字系統與網際網路結合在一起的機會。他想到：「我只要把超文字系統和傳輸控制協定、域名系統結合在一起，就能得出全球資訊網了！」。</p>
+<p>1989 年 3 月，他寫下了他的初步構想。次年，在羅伯特·卡里奧的幫助下，作出了一個修訂版，並得到主管麥克·森德爾（Mike Sendall）認可。Tim Burner Lee 以製作 ENQUIRE 系統時的基本概念建立全球資訊網，並設計製作出世上第一個網頁瀏覽器。同時，他也設計了世上第一個網頁伺服器，以下是羅伯特·卡里奧回憶當時的一段訪談：</p>
+<blockquote>
+<p>&quot;Mike Sendall buys a NeXT cube for evaluation, and gives it to Tim Berners-Lee. Tim's prototype implementation on NeXTStep is made in the space of a few months, thanks to the qualities of the NeXTStep software development system. This prototype offers WYSIWYG browsing/authoring! Current Web browsers used in &quot;surfing the Internet&quot; are mere passive windows, depriving the user of the possibility to contribute. During some sessions in the CERN cafeteria, Tim and I try to find a catching name for the system. I was determined that the name should not yet again be taken from Greek mythology. Tim proposes &quot;World-Wide Web&quot;. I like this very much, except that it is difficult to pronounce in French...&quot; by Robert Cailliau, 2 November 1995.</p>
+</blockquote>
+<p>1991年8月6日，世上第一個網站在 CERN 建成並上線：</p>
+<blockquote>
+<p>Info.cern.ch was the address of the world's first-ever web site and web server, running on a NeXT computer at CERN. The first web page address was http://info.cern.ch/hypertext/WWW/TheProject.html, which centred on information regarding the WWW project. Visitors could learn more about hypertext, technical details for creating their own webpage, and even an explanation on how to search the Web for information. There are no screenshots of this original page and, in any case, changes were made daily to the information available on the page as the WWW project developed. You may find a later copy (1992) on the World Wide Web Consortium website.</p>
+</blockquote>
+<p>這解釋了 World Wide Web 是什麼，用戶如何使用瀏覽器，如何建立網頁伺服器。</p>
+<p>接下來、全世界都被捲入到 World Wide Web 大開發的浪潮中，而 Tim Burner Lee 也因此而成了 Web 之父。</p>
+<p>後來、在 1994年， Tim Burner Lee 在麻省理工學院創辦了 World Wide Web Consortium ，成為全世界制定 Web 標準規格的主要機構，很多與 Web 有關的組織與公司都會透過 World Wide Web Consortium 參與 Web 新規格的制定過程。</p>
+<h3 id="參考文獻-5">參考文獻</h3>
+<ul>
+<li><a href="http://zh.wikipedia.org/wiki/%E8%92%82%E5%A7%86%C2%B7%E4%BC%AF%E7%BA%B3%E6%96%AF-%E6%9D%8E">維基百科：提姆·柏納-李</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Tim_Berners-Lee">Wikipedia:Tim Berners-Lee</a></li>
+</ul>
+<h1 id="影音頻道">影音頻道</h1>
+<h2 id="電腦網路的概念與歷史----internet-與-web">電腦網路的概念與歷史 -- Internet 與 Web</h2>
+<p>在本期的主題當中，我們已經用了很多文字來說明 Internet 與 Web 這兩個相關技術的概念與歷史了，但是有些事情用影片的方式傳達會更容易，因此筆者上網找了一些有關 Internet 與 Web 的影片。</p>
+<p>以下是筆者覺得還不錯的影片，提供給您參考！</p>
+<ul>
+<li>How the Internet Works in 5 Minutes -- <a href="http://youtu.be/7_LPdttKXPc" class="uri">http://youtu.be/7_LPdttKXPc</a></li>
+<li>History of the Internet -- <a href="http://youtu.be/9hIQjrMHTv4" class="uri">http://youtu.be/9hIQjrMHTv4</a></li>
+<li>What is the World Wide Web? - Twila Camp -- <a href="http://youtu.be/J8hzJxb0rpc" class="uri">http://youtu.be/J8hzJxb0rpc</a></li>
+<li>How the World Wide Web just happened - Tim Berners-Lee -- <a href="http://youtu.be/yF5-6AcohQw" class="uri">http://youtu.be/yF5-6AcohQw</a></li>
+<li>World Wide Web Turns 25: Inteview with inventor Sir Tim Berners-Lee -- <a href="http://youtu.be/loi6PYaRqHA" class="uri">http://youtu.be/loi6PYaRqHA</a></li>
+</ul>
+<h1 id="科學原理">科學原理</h1>
+<h2 id="電腦的數學基礎二進位系統與運算">電腦的數學基礎：二進位系統與運算</h2>
+<h3 id="十進位">十進位</h3>
+<p>小學所教的加減乘除方法都是以十進位為基礎的，舉例而言、十進位的 358 其實代表的是 <code>3*100+5*10+8*1</code> 這樣以 10 為基礎的表達系統，如果寫成直式或許讀者會看得更清楚。</p>
+<pre><code>   300          3*100
+    50        + 5* 10  
+     8        + 8*  1
++ -----    = --------------------
+   358        3*100+5*10+8*1</code></pre>
+<h3 id="二進位">二進位</h3>
+<p>但是在電腦當中，十進位並不好用，二進位才是比較適合電腦的表達方式，以下是二進位裏前幾個位元所代表的意義。</p>
+<pre><code>0 0 0 1   代表 1
+0 0 1 0   代表 2 
+0 1 0 0   代表 4 = 2*2
+1 0 0 0   代表 8 = 2*2*2</code></pre>
+<p>於是，二進位的 1101 所代表的，其實是如下的一個數字：</p>
+<pre><code>  1000           8
+   100           4
+     1           1
++ -----   = + -------
+  1101          13</code></pre>
+<h3 id="二進位加法">二進位加法</h3>
+<p>當我們用十進位做加法運算的時候，每當數字到達十就必須進位，這也正是十進位這個名詞的意義，以下是一個十進位加法的範例。</p>
+<pre><code>進位     11
+   A     358
+   B      74
++----  ---------
+ A+B     432</code></pre>
+<p>同樣的、當我們用二進位作加法的時候，只要數字到達 2 就必須要進位，以下是一個二進位加法的範例：</p>
+<pre><code>進位   1 1 1 1 1
+   A     0 1 1 0 1
+   B     1 0 1 1 1
++----  -----------
+ A+B   1 0 0 1 0 0 = 十進位的 36</code></pre>
+<h3 id="小結-2">小結</h3>
+<p>當您可以理解二進位與其加法之後，就可以進一步理解「用二補數表示負數、二進位減法、乘法與除法」等等，未來我們將會進一步討論這些主題。</p>
+<p>現在我們已經學會二進位的表示法，還有二進位的加法了，於是我們可以開始設計二進位加法的電路了，讓我們回到邏輯閘的世界吧!</p>
+<h3 id="參考文獻-6">參考文獻</h3>
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Logic_gate">維基百科：邏輯閘</a></li>
+<li><a href="http://zh.wikipedia.org/wiki/%E5%8A%A0%E6%B3%95%E5%99%A8">維基百科：加法器</a></li>
+<li><a href="http://zh.wikipedia.org/wiki/%E4%BA%8C%E8%BF%9B%E5%88%B6">維基百科：二進制</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Binary_number">Wikipedia:Binary Number</a></li>
+</ul>
+<h1 id="科技人專欄">科技人專欄</h1>
+<h2 id="組成電腦的基礎元件----邏輯閘">組成電腦的基礎元件 -- 邏輯閘</h2>
+<p>在 [上期的少年科技人雜誌] 當中，我們探討了「電腦的歷史、工業與結構」這個議題，並且在 <a href="http://programmermagazine.github.io/y201410/htm/focus2.html">透視電腦的內部結構</a> 這篇文章中看到了電腦的基本組成元件，那就是邏輯閘。</p>
+<p>在接下來的幾期當中，我們將逐步的從邏輯閘開始，解說「電腦是如何用邏輯閘所組成的」這個問題。</p>
+<p>組成電腦的基本邏輯閘包含 AND、OR、NOT、XOR 等四種，其中 AND、OR、NOT 三種就可以組成所有電路，包含 XOR，但是加上 XOR 時會比較方便，因為在有些電路上用 XOR 可以大量減少邏輯閘的數量。</p>
+<h3 id="基本邏輯閘-logic-gate">基本邏輯閘 (Logic Gate)</h3>
+<p>反閘 (NOT) 的圖示與功能如下，其輸入輸出都只有一條，當輸入 0 的時候就輸出 1，而輸入 1 的時候就輸出 0。</p>
+<div class="figure">
+<img src="../img/notGate.png" alt="圖、反閘 (NOT)" /><p class="caption">圖、反閘 (NOT)</p>
+</div>
+<p>及閘 (AND) 的圖示與功能如下，其輸入有兩條，輸出只有一條，當輸入 11 的時候才會就輸出 1，其他三種情況則一律輸出 0。</p>
+<div class="figure">
+<img src="../img/andGate.png" alt="圖、及閘 (AND)" /><p class="caption">圖、及閘 (AND)</p>
+</div>
+<p>換言之、AND 是在 A B 兩者都為 1 的時候才會輸出 1，這和邏輯學上的「且」(AND) 相同，當我們說「他高且帥」的時候，代表他同時具有「高」和「帥」兩個特性。</p>
+<p>或閘 (OR) 的圖示與功能如下，其輸入有兩條，輸出只有一條，當輸入 00 的時候才會就輸出 0，其他三種情況則一律輸出 1。</p>
+<div class="figure">
+<img src="../img/orGate.png" alt="圖、或閘 (OR)" /><p class="caption">圖、或閘 (OR)</p>
+</div>
+<p>換句話說、只要 A B 兩者當中有一個為 1，那麼輸出就會是 1，這和邏輯學上的「或」(OR) 相同，當我們說「高或帥」的時候，代表他只要具備「高」或「帥」其中一個特性就滿足了條件。</p>
+<p>互斥或閘 (XOR) 的圖示與功能如下，其輸入有兩條，輸出只有一條，當兩條不一樣的時候就輸出 1，兩者一樣的時候則會輸出 0。</p>
+<div class="figure">
+<img src="../img/xorGate.png" alt="圖、互斥或閘 (XOR)" /><p class="caption">圖、互斥或閘 (XOR)</p>
+</div>
+<p>有了上述邏輯閘之後，我們就可以用這樣的閘來組成電腦當中最核心的一個運算，那就是加法了。</p>
+<p>但是、要理解如何用邏輯閘組成加法運算之前，我們必須先了解二進位這個概念。</p>
+<h3 id="半加器與全加器">半加器與全加器</h3>
+<p>將兩個輸入相加的電路，稱為「半加器」(half adder)，而將三個輸入相加的電路，則稱為「全加器」(full adder)。</p>
+<div class="figure">
+<img src="../img/Half_Adder.svg.png" alt="圖、半加器" /><p class="caption">圖、半加器</p>
+</div>
+<p>半加器的電路如上圖所示，而其輸入輸出的真值表如下所示：</p>
+<pre><code>A + B → S, 進位 C
+0 + 0 → 0       0 
+0 + 1 → 1       0
+1 + 0 → 1       0
+1 + 1 → 0,      1 (因為 1 + 1 = 2 = 0 + (1 × 2) )</code></pre>
+<p>上述的輸出 S 只有在 A , B 兩者不同的時候才會是 1，這完全符合 XOR 電路的行為模式，因此我們可以用一個 XOR 電路輕易地完成 S 的輸出動作。</p>
+<p>而 C 則是在 A, B 兩者均為 1 的情況下才會是 1，否則就會是 0。這與 AND 閘的真值表完全一致，因此我們只要用一個 AND 閘就可以做到 C 的功能了。</p>
+<p>但是、雖然我們想做的事情是兩組二進位數字的加法，但是由於相加之後可能會產生進位，因此必須要考慮到三個位元相加的情況，這時就需要將半加器進一步擴充為全加器，以便進行三位元相加的運算。</p>
+<p>以下是全加器的電路圖與真值表，其中的輸出 S 只要用兩個 XOR 閘就能做到，因為 S 只有在奇數個 1 的時候才會輸出 1，偶數個 1 的時候就會輸出 0，這種組合完全符合 n 輸入的 XOR 閘之行為。</p>
+<div class="figure">
+<img src="../img/fulladder.png" alt="圖、全加器的電路與真值表" /><p class="caption">圖、全加器的電路與真值表</p>
+</div>
+<p>但是對於輸出 C 而言，則需要兩個 AND 閘和一個 OR 閘連接之後才能達成，您可以根據上面的 AND, OR 之真值表定義，驗證一下該電路的輸出是否真的符合上圖真值表的要求，這會是一個很好的練習。</p>
+<p>在此、我們直接提出了全加器的電路圖，而沒有展示這個電路的「設計過程」，因為這種設計過程牽涉到一種稱為「卡諾圖」的電路化簡工具，</p>
+<ul>
+<li><a href="http://zh.wikipedia.org/zh-tw/%E5%8D%A1%E8%AF%BA%E5%9B%BE">維基百科：卡諾圖</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Karnaugh_map">Wikipedia:Karnaugh_map</a></li>
+</ul>
+<h3 id="二進位加法電路">二進位加法電路</h3>
+<p>有了上述的全加器電路之後，我們就可以任意地進行三個位元的加法，於是只要我們將這些全加器一個接一個的串起來，並將進位輸出到下一個全加器當中，就可以任意地做出 n 位元的加法器電路了，以下是一個四位元加法器的圖示。</p>
+<div class="figure">
+<img src="../img/adder4.png" alt="圖、四位元加法器" /><p class="caption">圖、四位元加法器</p>
+</div>
+<p>當您能做出 n 位元加法器時，應該就可以理解為何電腦的基本組成會是「邏輯閘」了，因為我們可以輕易地串接出 32 位元的加法器，當然也可以用類似的原理做出「減法器、乘法器、除法器」，然後做出整顆「中央處理器」(CPU)，甚至是整台電腦的數位電路了。</p>
+<h3 id="參考文獻-7">參考文獻</h3>
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Logic_gate">維基百科：邏輯閘</a></li>
+<li><a href="http://zh.wikipedia.org/wiki/%E5%8A%A0%E6%B3%95%E5%99%A8">維基百科：加法器</a></li>
+</ul>
+<h1 id="雜誌訊息">雜誌訊息</h1>
+<h2 id="投稿須知">投稿須知</h2>
+<p><em>給專欄寫作者：</em> 做公益不需要有壓力。如果您願意撰寫專欄，您可以輕鬆的寫，如果當月的稿件出不來，我們會安排其他稿件上場。</p>
+<p><em>給網誌捐贈者：</em> 如果您沒時間寫專欄或投稿，沒關係，只要將您的網誌以 [創作共用的「姓名標示、非商業性、相同方式分享」授權] 並通知我們，我們會自動從中選取需要的文章進行編輯，放入適當的雜誌當中出刊。</p>
+<p><em>給文章投稿者：</em> 程式人雜誌非常歡迎您加入作者的行列，如果您想撰寫任何文章或投稿，請盡可能用 markdown 編輯好您的稿件，並於每個月 25 日前投稿到 <a href="https://www.facebook.com/groups/youngmaker.magazine/">少年科技人社團</a> 的檔案區，我們會盡可能將稿件編入隔月1號出版程式人雜誌當中，也歡迎您到社團中與我們一同討論。</p>
+<p>如果您要投稿給程式人雜誌，我們最希望的格式是採用 markdown 的格式撰寫，然後將所有檔按壓縮為 zip 上傳到社團檔案區給我們， 如您想學習 markdown 的撰寫出版方式，可以參考 <a href="https://dl.dropboxusercontent.com/u/101584453/pmag/201304/htm/video1.html">看影片學 markdown 編輯出版流程</a> 一文。</p>
+<p>如果您無法採用 markdown 的方式撰寫，也可以直接給我們您的稿件，像是 MS. Word 的 doc 檔或 LibreOffice 的 odt 檔都可以，我們 會將這些稿件改寫為 markdown 之後編入雜誌當中。</p>
+<h2 id="智財權注意事項">智財權注意事項</h2>
+<p>當您投稿時，最重要需注意的一件事情，是智慧財產權的問題。</p>
+<p>您必須確定投搞的文章沒有侵權的問題！</p>
+<p>如果文章與圖片完全是您自行製作的，那應該不會侵權。但是如果您有使用網路上的圖片或修改網路上的文章，請務必採用沒有侵權疑慮的來源，像是 <a href="http://zh.wikipedia.org/">維基百科</a> 或者 <a href="http://zh.wikipedia.org/zh-tw/%E5%88%9B%E4%BD%9C%E5%85%B1%E7%94%A8">創作共用</a> 授權的文章，並且標明修改來源。</p>
+<p>舉例而言，如果您修改自維基百科，請標上「本文修改自維基百科」，如果是其他「創作共用」文章或圖片，則需要附上原始文件或圖片的連結。</p>
+<p>以下是「創作共用」文章的授權類型，您可以在標識姓名來源後採用「姓名標示（BY）」與「 姓名標示（BY）-相同方式分享（SA）」這兩類授權的文章，也可以在特別標示授權後採用「姓名標示（BY）-非商業性（NC）」或「姓名標示（BY）-非商業性（NC）-相同方式分享（SA）」的文章，但是不要採用有「禁止改作（ND）」的文章來進行衍生創作。</p>
+<div class="figure">
+<img src="../img/cclicenses.jpg" />
+</div>
+<h2 id="參與編輯">參與編輯</h2>
+<p>您也可以擔任程式人雜誌的編輯，甚至創造一個全新的公益雜誌，我們誠摯的邀請您加入「開放公益出版」的行列，如果您想擔任編輯或創造新雜誌，也歡迎到 <a href="https://www.facebook.com/groups/youngmaker.magazine/">少年科技人社團</a> 或 <a href="https://www.facebook.com/groups/programmerMagazine/">程式人雜誌社團</a> 來與我們討論相關事宜。</p>
+<h2 id="公益資訊">公益資訊</h2>
+<table>
+<colgroup>
+<col width="22%" />
+<col width="20%" />
+<col width="28%" />
+<col width="28%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">公益團體</th>
+<th align="left">聯絡資訊</th>
+<th align="left">服務對象</th>
+<th align="left">捐款帳號</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">財團法人羅慧夫顱顏基金會</td>
+<td align="left"><a href="http://www.nncf.org/" class="uri">http://www.nncf.org/</a> <BR/> <script type="text/javascript">
+<!--
+h='&#110;&#110;&#x63;&#102;&#46;&#x6f;&#114;&#x67;';a='&#64;';n='&#108;&#x79;&#110;&#110;';e=n+a+h;
+document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\/'+'a'+'>');
+// -->
+</script><noscript>&#108;&#x79;&#110;&#110;&#32;&#x61;&#116;&#32;&#110;&#110;&#x63;&#102;&#32;&#100;&#x6f;&#116;&#32;&#x6f;&#114;&#x67;</noscript> <BR/> 02-27190408分機 232</td>
+<td align="left">顱顏患者 (如唇顎裂、小耳症或其他罕見顱顏缺陷）</td>
+<td align="left">銀行：009彰化銀行民生分行<BR/> 帳號：5234-01-41778-800</td>
+</tr>
+<tr class="even">
+<td align="left">社團法人台灣省兒童少年成長協會</td>
+<td align="left"><a href="http://www.cyga.org/" class="uri">http://www.cyga.org/</a> <BR/> <script type="text/javascript">
+<!--
+h='&#x67;&#x6d;&#x61;&#x69;&#108;&#46;&#x63;&#x6f;&#x6d;';a='&#64;';n='&#x63;&#x79;&#x67;&#x61;&#x39;&#x39;';e=n+a+h;
+document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\/'+'a'+'>');
+// -->
+</script><noscript>&#x63;&#x79;&#x67;&#x61;&#x39;&#x39;&#32;&#x61;&#116;&#32;&#x67;&#x6d;&#x61;&#x69;&#108;&#32;&#100;&#x6f;&#116;&#32;&#x63;&#x6f;&#x6d;</noscript> <BR/> 04-23058005</td>
+<td align="left">單親、隔代教養.弱勢及一般家庭之兒童青少年</td>
+<td align="left">銀行：新光銀行 <BR/> 戶名：台灣省兒童少年成長協會 <BR/> 帳號：103-0912-10-000212-0</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="footer">
+<a href="https://www.facebook.com/groups/youngmaker.magazine/">少年科技人雜誌</a> ，採用 <a href="http://creativecommons.org/licenses/by-sa/3.0/tw/ ">創作共用：姓名標示、相同方式分享</a> 授權，歡迎加入 <a href="https://www.facebook.com/groups/youngmaker.magazine/">雜誌社團</a>
+</div>
+</body>
+</html>
